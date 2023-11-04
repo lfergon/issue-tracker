@@ -20,7 +20,6 @@ class TestHostComponent {
 describe('ConfirmDialogComponent', () => {
   let component: ConfirmDialogComponent;
   let fixture: ComponentFixture<ConfirmDialogComponent>;
-  let hostComponent: TestHostComponent;
   let hostFixture: ComponentFixture<TestHostComponent>;
 
   beforeEach(async () => {
@@ -32,7 +31,6 @@ describe('ConfirmDialogComponent', () => {
     component = fixture.componentInstance;
     fixture.detectChanges();
     hostFixture = TestBed.createComponent(TestHostComponent);
-    hostComponent = hostFixture.componentInstance;
     component = hostFixture.debugElement.query(
       By.directive(ConfirmDialogComponent),
     ).componentInstance;

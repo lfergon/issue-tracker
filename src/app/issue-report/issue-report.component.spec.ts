@@ -7,7 +7,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 describe('IssueReportComponent', () => {
   let component: IssueReportComponent;
   let fixture: ComponentFixture<IssueReportComponent>;
-  let mockIssuesService: any;
+  let mockIssuesService: { createIssue: jest.Mock; getSuggestions: jest.Mock };
 
   beforeEach(async () => {
     mockIssuesService = {
