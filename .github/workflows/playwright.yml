@@ -18,9 +18,11 @@ jobs:
     - name: Start Angular app
       run: npm start &
     - name: Wait for Angular
-      uses: jakepartusch/wait-for-netlify-action@v1
-      with:
-        site_name: "http://localhost:4200"
+      run: |
+        while ! curl -s http://localhost:4200 > /dev/null; do
+          echo "Waiting for Angular app to be accessible..."
+          sleep 10
+        done
     - name: Install Playwright Browsers
       run: npx playwright install --with-deps
     - name: Run Playwright tests
