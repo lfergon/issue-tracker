@@ -25,3 +25,26 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+# Playwright
+
+`npx playwright test`
+
+Runs the end-to-end tests.
+
+`npx playwright test --ui`
+
+Starts the interactive UI mode.
+
+`npx playwright test --project=chromium`
+
+Runs the tests only on Desktop Chrome.
+
+`npx playwright test example`
+Runs the tests in a specific file.
+
+`npx playwright test --debug`
+Runs the tests in debug mode.
+
+`npx playwright codegen`
+Auto generate tests with Codegen.
