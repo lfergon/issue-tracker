@@ -8,7 +8,7 @@ exports[`IssueReportComponent should match snapshot 1`] = `
   suggestions={[Function Array]}
 >
   <h3>
-     Report an issue
+    Report an issue
   </h3><form
     class="ng-untouched ng-pristine ng-invalid"
     clrform=""

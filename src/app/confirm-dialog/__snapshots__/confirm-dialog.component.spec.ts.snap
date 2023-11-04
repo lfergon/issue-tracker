@@ -9,7 +9,7 @@ exports[`ConfirmDialogComponent should match snapshot 1`] = `
     <h3
       class="modal-title"
     >
-       Resolve Issue  
+      Resolve Issue 
     </h3>
     <div
       class="modal-body"
@@ -25,13 +25,13 @@ exports[`ConfirmDialogComponent should match snapshot 1`] = `
         class="btn btn-outline"
         type="button"
       >
-        Cancel
+         Cancel 
       </button>
       <button
         class="btn btn-danger"
         type="button"
       >
-        Yes, continue
+         Yes, continue 
       </button>
     </div>
   </clr-modal>

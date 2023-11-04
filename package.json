@@ -8,7 +8,8 @@
     "watch": "ng build --watch --configuration development",
     "test": "jest --coverage",
     "lint": "ng lint",
-    "prettify": "prettier . --write"
+    "prettify": "prettier . --write",
+    "test:up-snap": "jest --updateSnapshot"
   },
   "private": true,
   "dependencies": {
