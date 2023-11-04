@@ -10,7 +10,8 @@
     "lint": "ng lint",
     "prettify": "prettier . --write",
     "test:up-snap": "jest --updateSnapshot",
-    "test:e2e": "npx playwright test"
+    "test:e2e": "npx playwright test",
+    "test:e2e:up-snap": "npx playwright test --update-snapshots"
   },
   "private": true,
   "dependencies": {

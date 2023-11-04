@@ -1,8 +1,8 @@
-import { chromium } from 'playwright';
 import { test, expect } from '@playwright/test';
 
 test('test issues', async ({ page }) => {
   await page.goto('http://localhost:4200/');
+  await expect(page).toHaveScreenshot();
   await page.getByRole('button', { name: 'Issue No', exact: true }).click();
   await page.getByRole('button', { name: 'Type', exact: true }).click();
   await page.getByRole('button', { name: 'Title', exact: true }).click();
