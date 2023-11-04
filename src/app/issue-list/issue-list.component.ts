@@ -1,12 +1,12 @@
-import {Component, OnInit} from '@angular/core';
-import {IssuesService} from "../issues.service";
-import {Issue} from "../issue";
-import {issues} from "../../assets/mock-issues";
+import { Component, OnInit } from '@angular/core';
+import { IssuesService } from '../issues.service';
+import { Issue } from '../issue';
+import { issues } from '../../assets/mock-issues';
 
 @Component({
   selector: 'app-issue-list',
   templateUrl: './issue-list.component.html',
-  styleUrls: ['./issue-list.component.css']
+  styleUrls: ['./issue-list.component.css'],
 })
 export class IssueListComponent implements OnInit {
   showReportIssue = false;
@@ -15,9 +15,7 @@ export class IssueListComponent implements OnInit {
 
   protected readonly issues = issues;
 
-  constructor(
-    private issuesService: IssuesService
-  ) { }
+  constructor(private issuesService: IssuesService) {}
 
   private getIssues() {
     return this.issuesService.getPendingIssues();

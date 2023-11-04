@@ -1,0 +1,127 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`IssueReportComponent should match snapshot 1`] = `
+<app-issue-report
+  formClose={[Function EventEmitter_]}
+  issueForm={[Function FormGroup]}
+  issuesService={[Function Object]}
+  suggestions={[Function Array]}
+>
+  <h3>
+     Report an issue
+  </h3><form
+    class="ng-untouched ng-pristine ng-invalid"
+    clrform=""
+    novalidate=""
+  >
+    <clr-input-container>
+      <label>
+        Issue
+      </label>
+      <input
+        class="ng-untouched ng-pristine ng-invalid"
+        clrinput=""
+        formcontrolname="title"
+      />
+      <clr-control-error>
+        Title is required
+      </clr-control-error>
+    </clr-input-container>
+    <clr-textarea-container>
+      <label>
+        Description
+      </label>
+      <textarea
+        class="ng-untouched ng-pristine ng-valid"
+        clrtextarea=""
+        formcontrolname="description"
+        placeholder="Description"
+      />
+    </clr-textarea-container>
+    <clr-radio-container
+      clrinline=""
+    >
+      <label>
+        Priority
+      </label>
+      <clr-radio-wrapper>
+        <input
+          class="ng-untouched ng-pristine ng-invalid"
+          clrradio=""
+          formcontrolname="priority"
+          name="priority"
+          type="radio"
+          value="low"
+        />
+        <label>
+          Low
+        </label>
+      </clr-radio-wrapper>
+      <clr-radio-wrapper>
+        <input
+          class="ng-untouched ng-pristine ng-invalid"
+          clrradio=""
+          formcontrolname="priority"
+          name="priority"
+          type="radio"
+          value="medium"
+        />
+        <label>
+          Medium
+        </label>
+      </clr-radio-wrapper>
+      <clr-radio-wrapper>
+        <input
+          class="ng-untouched ng-pristine ng-invalid"
+          clrradio=""
+          formcontrolname="priority"
+          name="priority"
+          type="radio"
+          value="high"
+        />
+        <label>
+          High
+        </label>
+      </clr-radio-wrapper>
+      <clr-control-error>
+        Priority is required
+      </clr-control-error>
+    </clr-radio-container>
+    <clr-select-container>
+      <label>
+        Type
+      </label>
+      <select
+        class="ng-untouched ng-pristine ng-invalid"
+        clrselect=""
+        formcontrolname="type"
+      >
+        <option
+          value="feature"
+        >
+          Feature
+        </option>
+        <option
+          value="bug"
+        >
+          Bug
+        </option>
+        <option
+          value="task"
+        >
+          Task
+        </option>
+      </select>
+      <clr-control-error>
+        Type is required
+      </clr-control-error>
+    </clr-select-container>
+    <button
+      class="btn btn-primary"
+      type="submit"
+    >
+      Create
+    </button>
+  </form>
+</app-issue-report>
+`;

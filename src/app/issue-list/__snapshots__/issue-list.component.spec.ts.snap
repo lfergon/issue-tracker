@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`IssueListComponent should match snapshot 1`] = `
+<app-issue-list
+  issues={[Function Array]}
+  issuesService={[Function Object]}
+  selectedIssue="undefined"
+  showReportIssue="false"
+>
+  <button
+    class="btn btn-primary"
+  >
+    Add new issue
+  </button><clr-datagrid>
+    <clr-dg-column>
+      Issue No
+    </clr-dg-column>
+    <clr-dg-column>
+      Type
+    </clr-dg-column>
+    <clr-dg-column>
+      Title
+    </clr-dg-column>
+    <clr-dg-column>
+      Description
+    </clr-dg-column>
+    <clr-dg-column>
+      Priority
+    </clr-dg-column>
+    <clr-dg-footer>
+      5 issues
+    </clr-dg-footer>
+  </clr-datagrid>
+</app-issue-list>
+`;

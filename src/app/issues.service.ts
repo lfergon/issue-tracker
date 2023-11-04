@@ -1,17 +1,17 @@
 import { Injectable } from '@angular/core';
-import { Issue } from "./issue";
-import { issues } from "../assets/mock-issues";
+import { Issue } from './issue';
+import { issues } from '../assets/mock-issues';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class IssuesService {
   private issues: Issue[] = issues;
 
-  constructor() { }
+  constructor() {}
 
   getPendingIssues(): Issue[] {
-    return this.issues.filter(issue => !issue.completedAt);
+    return this.issues.filter((issue) => !issue.completedAt);
   }
 
   createIssue(issue: Issue): void {
@@ -20,17 +20,19 @@ export class IssuesService {
   }
 
   completeIssue(issue: Issue): void {
-    const selectedIsssue: Issue = {
+    const selectedIssue: Issue = {
       ...issue,
-      completedAt: new Date()
+      completedAt: new Date(),
     };
-    const index = this.issues.findIndex(issue => issue.issueNumber === selectedIsssue.issueNumber);
-    this.issues[index] = selectedIsssue;
+    const index = this.issues.findIndex(
+      (issue) => issue.issueNumber === selectedIssue.issueNumber,
+    );
+    this.issues[index] = selectedIssue;
   }
 
   getSuggestions(title: string): Issue[] {
     if (title.length > 3) {
-      return this.issues.filter(issue => issue.title.includes(title));
+      return this.issues.filter((issue) => issue.title.includes(title));
     }
     return [];
   }
