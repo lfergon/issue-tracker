@@ -11,10 +11,10 @@
       <clr-stack-view>
         <clr-stack-header>Similar issues</clr-stack-header>
         <clr-stack-block *ngFor="let suggestion of suggestions">
-          <clr-stack-label
-            >{{ suggestion.issueNumber }} :
-            {{ suggestion.title }}</clr-stack-label
-          >
+          <clr-stack-label>
+            {{ suggestion.issueNumber }} :
+            {{ suggestion.title }}
+          </clr-stack-label>
           <clr-stack-content>
             <p>{{ suggestion.description }}</p>
           </clr-stack-content>
