@@ -1,0 +1,13 @@
+# netlify.toml
+
+[build]
+
+  publish = "dist"
+
+  # Build command
+  command = "npm install --force && ng build"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
