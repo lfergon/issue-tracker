@@ -23,7 +23,7 @@
     "@angular/platform-browser": "17.0.3",
     "@angular/platform-browser-dynamic": "17.0.3",
     "@angular/router": "17.0.3",
-    "@cds/core": "6.8.0",
+    "@cds/core": "6.9.0",
     "@clr/angular": "16.0.3",
     "@clr/ui": "16.0.3",
     "rxjs": "7.8.1",
