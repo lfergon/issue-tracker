@@ -28,25 +28,9 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
-# Playwright
+# End-to-end testing with Puppeteer
 
-`npx playwright test`
+`npm run e2e` will run the end-to-end tests using Puppeteer. The tests are located in `e2e` directory.
 
-Run the end-to-end tests.
 
-`npx playwright test --ui`
 
-Start the interactive UI mode.
-
-`npx playwright test --project=chromium`
-
-Runs the tests only on Desktop Chrome.
-
-`npx playwright test example`
-Runs the tests in a specific file.
-
-`npx playwright test --debug`
-Runs the tests in debug mode.
-
-`npx playwright codegen`
-Auto generate tests with Codegen.
