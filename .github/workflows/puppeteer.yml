@@ -1,0 +1,25 @@
+name: Puppeteer Tests
+on:
+  push:
+    branches: [main, main]
+  pull_request:
+    branches: [main, main]
+jobs:
+  test:
+    timeout-minutes: 60
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 20
+      - name: Install dependencies
+        run: npm install --force
+      - name: Run Puppeteer tests
+        run: npm run e2e
+      - uses: actions/upload-artifact@v3
+        if: always()
+        with:
+          name: puppeteer-report
+          path: puppeteer-report/
+          retention-days: 30
