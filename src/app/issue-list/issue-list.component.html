@@ -1,4 +1,4 @@
-<ng-container *ngIf="!showReportIssue">
+@if (!showReportIssue) {
   <button class="btn btn-primary" (click)="showReportIssue = true">
     Add new issue
   </button>
@@ -28,13 +28,15 @@
     </clr-dg-row>
     <clr-dg-footer>{{ issues.length }} issues</clr-dg-footer>
   </clr-datagrid>
-</ng-container>
-<app-issue-report
-  *ngIf="showReportIssue"
-  (formClose)="onCloseReport()"
-></app-issue-report>
-<app-confirm-dialog
-  *ngIf="selectedIssue"
-  [issueNumber]="selectedIssue.issueNumber"
-  (confirm)="onConfirm($event)"
-></app-confirm-dialog>
+}
+
+@if (showReportIssue) {
+  <app-issue-report (formClose)="onCloseReport()"></app-issue-report>
+}
+
+@if (selectedIssue) {
+  <app-confirm-dialog
+    [issueNumber]="selectedIssue.issueNumber"
+    (confirm)="onConfirm($event)"
+  ></app-confirm-dialog>
+}

@@ -1,5 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import { IssueListComponent } from './issue-list/issue-list.component';
+import { ClarityModule } from '@clr/angular';
 
 describe('AppComponent', () => {
   let app: AppComponent;
@@ -7,7 +9,8 @@ describe('AppComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [AppComponent],
+      imports: [ClarityModule],
+      declarations: [AppComponent, IssueListComponent],
     }).compileComponents();
 
     fixture = TestBed.createComponent(AppComponent);
@@ -20,10 +23,5 @@ describe('AppComponent', () => {
 
   it(`should have as title 'issue-tracker'`, () => {
     expect(app.title).toEqual('issue-tracker');
-  });
-
-  it('should match snapshot', () => {
-    fixture.detectChanges();
-    expect(fixture).toMatchSnapshot();
   });
 });

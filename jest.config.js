@@ -6,5 +6,5 @@ jest = {
 module.exports = {
   preset: "jest-preset-angular",
   setupFilesAfterEnv: ["<rootDir>/setup-jest.ts"],
-  testPathIgnorePatterns: ["/e2e/"],
+  testPathIgnorePatterns: ["e2e"],
 };

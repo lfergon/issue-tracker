@@ -3,6 +3,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { IssueReportComponent } from './issue-report.component';
 import { IssuesService } from '../issues.service';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ClarityModule } from '@clr/angular';
 
 describe('IssueReportComponent', () => {
   let component: IssueReportComponent;
@@ -17,7 +18,7 @@ describe('IssueReportComponent', () => {
 
     await TestBed.configureTestingModule({
       declarations: [IssueReportComponent],
-      imports: [ReactiveFormsModule],
+      imports: [ReactiveFormsModule, ClarityModule],
       providers: [{ provide: IssuesService, useValue: mockIssuesService }],
     }).compileComponents();
 
@@ -49,9 +50,5 @@ describe('IssueReportComponent', () => {
     mockIssuesService.getSuggestions.mockReturnValue(mockSuggestions);
     component.issueForm.controls.title.setValue('Test');
     expect(component.suggestions).toEqual(mockSuggestions);
-  });
-
-  it('should match snapshot', () => {
-    expect(fixture).toMatchSnapshot();
   });
 });

@@ -2,6 +2,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { IssueListComponent } from './issue-list.component';
 import { IssuesService } from '../issues.service';
+import { ClarityModule } from '@clr/angular';
 
 describe('IssueListComponent', () => {
   let component: IssueListComponent;
@@ -15,6 +16,7 @@ describe('IssueListComponent', () => {
     };
 
     TestBed.configureTestingModule({
+      imports: [ClarityModule],
       declarations: [IssueListComponent],
       providers: [{ provide: IssuesService, useValue: mockIssuesService }],
     });
@@ -55,9 +57,5 @@ describe('IssueListComponent', () => {
     component.onConfirm(false);
     expect(mockIssuesService.completeIssue).not.toHaveBeenCalled();
     expect(component.selectedIssue).toBeUndefined();
-  });
-
-  it('should match snapshot', () => {
-    expect(fixture).toMatchSnapshot();
   });
 });

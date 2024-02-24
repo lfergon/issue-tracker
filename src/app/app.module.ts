@@ -1,8 +1,8 @@
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { ClarityModule } from '@clr/angular';
+import { ClarityModule, ClrModal } from '@clr/angular';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { IssueListComponent } from './issue-list/issue-list.component';
 import { ReactiveFormsModule } from '@angular/forms';
@@ -24,5 +24,6 @@ import { ConfirmDialogComponent } from './confirm-dialog/confirm-dialog.componen
   ],
   providers: [],
   bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class AppModule {}
