@@ -1,8 +1,5 @@
-<clr-modal
-  [clrModalOpen]="issueNumber !== undefined"
-  [clrModalClosable]="false"
->
-  <h3 class="modal-title">Resolve Issue {{ issueNumber }}</h3>
+<clr-modal [clrModalOpen]="!!issueNumber" [clrModalClosable]="false">
+  <h3 class="modal-title">Resolve Issue {{ issueNumber() }}</h3>
   <div class="modal-body">
     <p>Are you sure you want to close the issue?</p>
   </div>

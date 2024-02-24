@@ -1,4 +1,4 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Component, Input, Output, EventEmitter, input } from '@angular/core';
 
 @Component({
   selector: 'app-confirm-dialog',
@@ -6,16 +6,16 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./confirm-dialog.component.css'],
 })
 export class ConfirmDialogComponent {
-  @Input() issueNumber: number | undefined = undefined;
+  issueNumber = input.required<number>();
   @Output() confirm = new EventEmitter<boolean>();
 
   agree() {
     this.confirm.emit(true);
-    this.issueNumber = undefined;
+    this.issueNumber = input(0);
   }
 
   disagree() {
     this.confirm.emit(false);
-    this.issueNumber = undefined;
+    this.issueNumber = input(0);
   }
 }

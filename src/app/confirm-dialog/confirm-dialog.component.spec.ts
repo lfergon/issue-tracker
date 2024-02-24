@@ -1,9 +1,11 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { ConfirmDialogComponent } from './confirm-dialog.component';
-import { Component } from '@angular/core';
+import { input } from '@angular/core';
 import { By } from '@angular/platform-browser';
 import { ClarityModule } from '@clr/angular';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { InteractivityChecker } from '@angular/cdk/a11y';
+import { FormsModule } from '@angular/forms';
 
 window.ResizeObserver =
   window.ResizeObserver ||
@@ -13,39 +15,30 @@ window.ResizeObserver =
     unobserve: jest.fn(),
   }));
 
-@Component({
-  template: `
-    <app-confirm-dialog
-      [issueNumber]="issueNumber"
-      (confirm)="onConfirm($event)"
-    ></app-confirm-dialog>
-  `,
-})
-class TestHostComponent {
-  issueNumber: number | undefined = 123;
-  onConfirm(confirm: boolean) {}
-}
-
 describe('ConfirmDialogComponent', () => {
   let component: ConfirmDialogComponent;
   let fixture: ComponentFixture<ConfirmDialogComponent>;
-  let hostFixture: ComponentFixture<TestHostComponent>;
 
   beforeEach(async () => {
     window.Element.prototype.animate = jest.fn();
 
-    TestBed.configureTestingModule({
-      imports: [ClarityModule, BrowserAnimationsModule],
-      declarations: [ConfirmDialogComponent, TestHostComponent],
-    });
+    await TestBed.configureTestingModule({
+      imports: [ClarityModule, NoopAnimationsModule, FormsModule],
+      declarations: [ConfirmDialogComponent],
+    })
+      .overrideProvider(InteractivityChecker, {
+        useValue: {
+          isFocusable: () => true, // This checks focus trap, set it to true to avoid the warning cdk animation
+        },
+      })
+      .compileComponents();
+  });
 
+  beforeEach(() => {
     fixture = TestBed.createComponent(ConfirmDialogComponent);
     component = fixture.componentInstance;
+    fixture.componentRef.setInput('issueNumber', 123);
     fixture.detectChanges();
-    hostFixture = TestBed.createComponent(TestHostComponent);
-    component = hostFixture.debugElement.query(
-      By.directive(ConfirmDialogComponent),
-    ).componentInstance;
   });
 
   it('should create', () => {
@@ -65,33 +58,41 @@ describe('ConfirmDialogComponent', () => {
   });
 
   it('should reset issueNumber when agree is called', () => {
-    component.issueNumber = 123;
     component.agree();
-    expect(component.issueNumber).toBeUndefined();
+    expect(component.issueNumber()).toBe(0);
   });
 
   it('should reset issueNumber when disagree is called', () => {
-    component.issueNumber = 123;
     component.disagree();
-    expect(component.issueNumber).toBeUndefined();
+    expect(component.issueNumber()).toBe(0);
   });
 
-  // TODO: TypeError: Cannot read properties of undefined (reading 'addEventListener')
-  // it('should trigger agree method when agree button is clicked', async () => {
-  //   jest.spyOn(component, 'agree');
-  //   hostFixture.detectChanges();
-  //
-  //   const button = hostFixture.debugElement.query(By.css('.btn-danger'));
-  //   fireEvent.click(button.nativeElement);
-  //   expect(component.agree).toHaveBeenCalled();
-  // });
-  //
-  // it('should trigger disagree method when disagree button is clicked', async () => {
-  //   jest.spyOn(component, 'disagree');
-  //   hostFixture.detectChanges();
-  //
-  //   const button = hostFixture.debugElement.query(By.css('.btn-outline'));
-  //   fireEvent.click(button.nativeElement);
-  //   expect(component.disagree).toHaveBeenCalled();
+  it('should open modal when issueNumber is defined', () => {
+    component.issueNumber = input(123);
+    fixture.detectChanges();
+    const modal = fixture.debugElement.query(By.css('clr-modal'));
+    expect(modal).toBeTruthy();
+  });
+
+  it('should close modal when click Cancel', () => {
+    jest.spyOn(component, 'disagree');
+    fixture.detectChanges();
+    const cancelButton = fixture.debugElement.query(By.css('.btn-outline'));
+    cancelButton.triggerEventHandler('click', null);
+    expect(component.disagree).toHaveBeenCalled();
+  });
+
+  it('should emit event when click Yes, continue', () => {
+    jest.spyOn(component, 'agree');
+    fixture.detectChanges();
+    const agreeButton = fixture.debugElement.query(By.css('.btn-danger'));
+    agreeButton.triggerEventHandler('click', null);
+    expect(component.agree).toHaveBeenCalled();
+  });
+
+  // Issues with Clarity UI
+  // it('should match snapshot', () => {
+  //   fixture.detectChanges();
+  //   expect(fixture).toMatchSnapshot();
   // });
 });
