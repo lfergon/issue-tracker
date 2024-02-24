@@ -5,7 +5,7 @@
   publish = "dist"
 
   # Build command
-  command = "npm install --force && ng build"
+  command = "pnpm run build"
 
 [[redirects]]
   from = "/*"
