@@ -18,7 +18,7 @@ jobs:
       - name: Install dependencies
         run: pnpm install
       - name: Create report directory
-        run: mkdir -p puppeteer-report
+        run: mkdir -p test-results
       - name: Run Puppeteer tests
         run: pnpm run e2e
       - uses: actions/upload-artifact@v3
