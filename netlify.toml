@@ -2,7 +2,7 @@
 
 [build]
 
-  publish = "dist"
+  publish = "dist/issue-tracker"
 
   # Build command
   command = "pnpm run build"
