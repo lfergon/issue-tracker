@@ -79,6 +79,18 @@
           "options": {
             "lintFilePatterns": ["src/**/*.ts", "src/**/*.html"]
           }
+        },
+        "e2e": {
+          "builder": "@puppeteer/ng-schematics:puppeteer",
+          "options": {
+            "devServerTarget": "issue-tracker:serve",
+            "testRunner": "jest"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "issue-tracker:serve:production"
+            }
+          }
         }
       }
     }

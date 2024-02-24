@@ -10,8 +10,7 @@
     "lint": "ng lint",
     "prettify": "prettier . --write",
     "test:up-snap": "jest --updateSnapshot",
-    "test:e2e": "npx playwright test",
-    "test:e2e:up-snap": "npx playwright test --update-snapshots"
+    "e2e": "ng e2e"
   },
   "private": true,
   "dependencies": {
@@ -40,7 +39,7 @@
     "@angular-eslint/template-parser": "17.2.1",
     "@angular/cli": "17.2.1",
     "@angular/compiler-cli": "17.2.2",
-    "@playwright/test": "1.41.2",
+    "@puppeteer/ng-schematics": "0.6.0",
     "@testing-library/angular": "15.2.0",
     "@types/jest": "29.5.12",
     "@types/node": "20.11.20",
@@ -49,9 +48,9 @@
     "eslint": "^8.54.0",
     "jest": "29.7.0",
     "jest-preset-angular": "14.0.3",
-    "playwright": "1.40.0",
     "prettier": "3.2.5",
-    "resize-observer-polyfill": "^1.5.1",
-    "typescript": "5.2.2"
+    "resize-observer-polyfill": "1.5.1",
+    "typescript": "5.2.2",
+    "puppeteer": "22.2.0"
   }
 }
