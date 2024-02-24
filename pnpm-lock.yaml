@@ -73,8 +73,8 @@ devDependencies:
     specifier: 1.41.2
     version: 1.41.2
   '@testing-library/angular':
-    specifier: 14.5.0
-    version: 14.5.0(@angular/common@17.2.2)(@angular/core@17.2.2)(@angular/platform-browser@17.2.2)(@angular/router@17.2.2)
+    specifier: 15.2.0
+    version: 15.2.0(@angular/common@17.2.2)(@angular/core@17.2.2)(@angular/platform-browser@17.2.2)(@angular/router@17.2.2)
   '@types/jest':
     specifier: 29.5.12
     version: 29.5.12
@@ -3260,13 +3260,13 @@ packages:
       '@sinonjs/commons': 3.0.1
     dev: true
 
-  /@testing-library/angular@14.5.0(@angular/common@17.2.2)(@angular/core@17.2.2)(@angular/platform-browser@17.2.2)(@angular/router@17.2.2):
-    resolution: {integrity: sha512-aNKEdKtDrj42AaxlzT/dILLLwm8IcUu94K2uYBTpqUnVvZpowks85rPhgk3RTF7NTcnZlDeBxuoRayjy88zSkA==}
+  /@testing-library/angular@15.2.0(@angular/common@17.2.2)(@angular/core@17.2.2)(@angular/platform-browser@17.2.2)(@angular/router@17.2.2):
+    resolution: {integrity: sha512-FqLMyS8FYYR/6FOSZrmUW7NCFIYSYZyg2MFd8S5PZcUNdfoPRaNY6nEmeuyoiQn6IveKUKCH3vTfOIeI16nxHg==}
     peerDependencies:
-      '@angular/common': '>= 15.1.0 || >= 16.0.0 || >= 17.0.0'
-      '@angular/core': '>= 15.1.0 || >= 16.0.0 || >= 17.0.0'
-      '@angular/platform-browser': '>= 15.1.0 || >= 16.0.0 || >= 17.0.0'
-      '@angular/router': '>= 15.1.0 || >= 16.0.0 || >= 17.0.0'
+      '@angular/common': '>= 17.0.0'
+      '@angular/core': '>= 17.0.0'
+      '@angular/platform-browser': '>= 17.0.0'
+      '@angular/router': '>= 17.0.0'
     dependencies:
       '@angular/common': 17.2.2(@angular/core@17.2.2)(rxjs@7.8.1)
       '@angular/core': 17.2.2(rxjs@7.8.1)(zone.js@0.14.2)
