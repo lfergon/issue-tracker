@@ -24,7 +24,7 @@
     "@angular/platform-browser-dynamic": "17.2.2",
     "@angular/router": "17.2.2",
     "@cds/core": "6.9.2",
-    "@clr/angular": "16.3.0",
+    "@clr/angular": "17.0.1",
     "@clr/ui": "17.0.1",
     "rxjs": "7.8.1",
     "tslib": "2.6.2",
