@@ -36,8 +36,8 @@ dependencies:
     specifier: 6.9.2
     version: 6.9.2
   '@clr/angular':
-    specifier: 16.3.0
-    version: 16.3.0(@angular/cdk@17.2.1)(@angular/common@17.2.2)(@angular/core@17.2.2)(@cds/core@6.9.2)(@clr/ui@17.0.1)
+    specifier: 17.0.1
+    version: 17.0.1(@angular/cdk@17.2.1)(@angular/common@17.2.2)(@angular/core@17.2.2)(@cds/core@6.9.2)(@clr/ui@17.0.1)
   '@clr/ui':
     specifier: 17.0.1
     version: 17.0.1(@cds/core@6.9.2)
@@ -1875,14 +1875,14 @@ packages:
       modern-normalize: 1.1.0
     dev: false
 
-  /@clr/angular@16.3.0(@angular/cdk@17.2.1)(@angular/common@17.2.2)(@angular/core@17.2.2)(@cds/core@6.9.2)(@clr/ui@17.0.1):
-    resolution: {integrity: sha512-KC0rQL6PXpWHgLZ7wl/gbtEiUcy38gkZvCnZ5eGM8HeNlU7S1MTvTZhqHHbDt2GKTOMHDTosBou2oAa4NhK5xQ==}
+  /@clr/angular@17.0.1(@angular/cdk@17.2.1)(@angular/common@17.2.2)(@angular/core@17.2.2)(@cds/core@6.9.2)(@clr/ui@17.0.1):
+    resolution: {integrity: sha512-36zROmGf0r5OArVrEunzKKKRtxSgvQGd6TgmPjSg8OMgyDr2l8jexJHooF0Hx3uXvd84rt0QoYuajMb+emOVNg==}
     peerDependencies:
-      '@angular/cdk': 15 || 16
-      '@angular/common': 15 || 16
-      '@angular/core': 15 || 16
-      '@cds/core': '>= 6.7.0'
-      '@clr/ui': 16.3.0
+      '@angular/cdk': 15 || 16 || 17
+      '@angular/common': 15 || 16 || 17
+      '@angular/core': 15 || 16 || 17
+      '@cds/core': '>= 6.9.2'
+      '@clr/ui': 17.0.1
     dependencies:
       '@angular/cdk': 17.2.1(@angular/common@17.2.2)(@angular/core@17.2.2)(rxjs@7.8.1)
       '@angular/common': 17.2.2(@angular/core@17.2.2)(rxjs@7.8.1)
