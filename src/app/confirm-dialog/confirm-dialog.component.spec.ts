@@ -2,7 +2,6 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { ConfirmDialogComponent } from './confirm-dialog.component';
 import { input } from '@angular/core';
 import { By } from '@angular/platform-browser';
-import { ClarityModule } from '@clr/angular';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { InteractivityChecker } from '@angular/cdk/a11y';
 import { FormsModule } from '@angular/forms';
@@ -23,7 +22,7 @@ describe('ConfirmDialogComponent', () => {
     window.Element.prototype.animate = jest.fn();
 
     await TestBed.configureTestingModule({
-      imports: [ClarityModule, NoopAnimationsModule, FormsModule],
+      imports: [NoopAnimationsModule, FormsModule],
       declarations: [ConfirmDialogComponent],
     })
       .overrideProvider(InteractivityChecker, {

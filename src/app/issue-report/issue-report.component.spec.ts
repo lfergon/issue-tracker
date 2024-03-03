@@ -3,7 +3,6 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { IssueReportComponent } from './issue-report.component';
 import { IssuesService } from '../issues.service';
 import { ReactiveFormsModule } from '@angular/forms';
-import { ClarityModule } from '@clr/angular';
 
 describe('IssueReportComponent', () => {
   let component: IssueReportComponent;
@@ -18,7 +17,7 @@ describe('IssueReportComponent', () => {
 
     await TestBed.configureTestingModule({
       declarations: [IssueReportComponent],
-      imports: [ReactiveFormsModule, ClarityModule],
+      imports: [ReactiveFormsModule],
       providers: [{ provide: IssuesService, useValue: mockIssuesService }],
     }).compileComponents();
 

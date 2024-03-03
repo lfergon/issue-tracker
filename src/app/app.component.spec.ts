@@ -1,7 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 import { IssueListComponent } from './issue-list/issue-list.component';
-import { ClarityModule } from '@clr/angular';
 
 describe('AppComponent', () => {
   let app: AppComponent;
@@ -9,7 +8,6 @@ describe('AppComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ClarityModule],
       declarations: [AppComponent, IssueListComponent],
     }).compileComponents();
 
