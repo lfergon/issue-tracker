@@ -31,6 +31,3 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 # End-to-end testing with Puppeteer
 
 `npm run e2e` will run the end-to-end tests using Puppeteer. The tests are located in `e2e` directory.
-
-
-
