@@ -2,6 +2,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { IssueListComponent } from './issue-list.component';
 import { IssuesService } from '../issues.service';
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 describe('IssueListComponent', () => {
   let component: IssueListComponent;
@@ -17,6 +18,7 @@ describe('IssueListComponent', () => {
     TestBed.configureTestingModule({
       declarations: [IssueListComponent],
       providers: [{ provide: IssuesService, useValue: mockIssuesService }],
+      schemas: [CUSTOM_ELEMENTS_SCHEMA],
     });
 
     fixture = TestBed.createComponent(IssueListComponent);

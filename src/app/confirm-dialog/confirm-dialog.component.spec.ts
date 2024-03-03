@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { ConfirmDialogComponent } from './confirm-dialog.component';
-import { input } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, input } from '@angular/core';
 import { By } from '@angular/platform-browser';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { InteractivityChecker } from '@angular/cdk/a11y';
@@ -24,6 +24,7 @@ describe('ConfirmDialogComponent', () => {
     await TestBed.configureTestingModule({
       imports: [NoopAnimationsModule, FormsModule],
       declarations: [ConfirmDialogComponent],
+      schemas: [CUSTOM_ELEMENTS_SCHEMA],
     })
       .overrideProvider(InteractivityChecker, {
         useValue: {

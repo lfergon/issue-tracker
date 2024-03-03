@@ -3,6 +3,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { IssueReportComponent } from './issue-report.component';
 import { IssuesService } from '../issues.service';
 import { ReactiveFormsModule } from '@angular/forms';
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 describe('IssueReportComponent', () => {
   let component: IssueReportComponent;
@@ -19,6 +20,7 @@ describe('IssueReportComponent', () => {
       declarations: [IssueReportComponent],
       imports: [ReactiveFormsModule],
       providers: [{ provide: IssuesService, useValue: mockIssuesService }],
+      schemas: [CUSTOM_ELEMENTS_SCHEMA],
     }).compileComponents();
 
     fixture = TestBed.createComponent(IssueReportComponent);
