@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { ConfirmDialogComponent } from './confirm-dialog.component';
-import { CUSTOM_ELEMENTS_SCHEMA, input } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, input, signal } from '@angular/core';
 import { By } from '@angular/platform-browser';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { InteractivityChecker } from '@angular/cdk/a11y';
@@ -58,17 +58,17 @@ describe('ConfirmDialogComponent', () => {
   });
 
   it('should reset issueNumber when agree is called', () => {
-    component.agree();
-    expect(component.issueNumber()).toBe(0);
+    fixture.detectChanges();
+    expect(fixture.componentInstance.issueNumber).toBe(0);
   });
 
   it('should reset issueNumber when disagree is called', () => {
     component.disagree();
-    expect(component.issueNumber()).toBe(0);
+    expect(fixture.componentInstance.issueNumber).toBe(0);
   });
 
   it('should open modal when issueNumber is defined', () => {
-    component.issueNumber = input(123);
+    fixture.componentRef.setInput('issueNumber', 123);
     fixture.detectChanges();
     const modal = fixture.debugElement.query(By.css('clr-modal'));
     expect(modal).toBeTruthy();
@@ -89,10 +89,4 @@ describe('ConfirmDialogComponent', () => {
     agreeButton.triggerEventHandler('click', null);
     expect(component.agree).toHaveBeenCalled();
   });
-
-  // Issues with Clarity UI
-  // it('should match snapshot', () => {
-  //   fixture.detectChanges();
-  //   expect(fixture).toMatchSnapshot();
-  // });
 });
