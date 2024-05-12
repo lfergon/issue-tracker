@@ -37,7 +37,7 @@ describe('ConfirmDialogComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(ConfirmDialogComponent);
     component = fixture.componentInstance;
-    fixture.componentRef.setInput('issueNumber', 123);
+    component.issueNumber = signal(123);
     fixture.detectChanges();
   });
 
@@ -49,27 +49,17 @@ describe('ConfirmDialogComponent', () => {
     jest.spyOn(component.confirm, 'emit');
     component.agree();
     expect(component.confirm.emit).toHaveBeenCalledWith(true);
+    expect(component.issueNumber()).toBe(0);
   });
 
   it('should emit false when disagree is called', () => {
     jest.spyOn(component.confirm, 'emit');
     component.disagree();
     expect(component.confirm.emit).toHaveBeenCalledWith(false);
-  });
-
-  it('should reset issueNumber when agree is called', () => {
-    fixture.detectChanges();
-    expect(fixture.componentInstance.issueNumber).toBe(0);
-  });
-
-  it('should reset issueNumber when disagree is called', () => {
-    component.disagree();
-    expect(fixture.componentInstance.issueNumber).toBe(0);
+    expect(component.issueNumber()).toBe(0);
   });
 
   it('should open modal when issueNumber is defined', () => {
-    fixture.componentRef.setInput('issueNumber', 123);
-    fixture.detectChanges();
     const modal = fixture.debugElement.query(By.css('clr-modal'));
     expect(modal).toBeTruthy();
   });

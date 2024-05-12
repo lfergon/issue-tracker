@@ -1,10 +1,10 @@
 import {
   Component,
-  Input,
   Output,
   EventEmitter,
   input,
   InputSignal,
+  signal,
 } from '@angular/core';
 
 @Component({
@@ -13,16 +13,16 @@ import {
   styleUrls: ['./confirm-dialog.component.css'],
 })
 export class ConfirmDialogComponent {
-  issueNumber: InputSignal<number> = input.required<number>();
+  issueNumber = signal(0);
   @Output() confirm = new EventEmitter<boolean>();
 
   agree() {
     this.confirm.emit(true);
-    this.issueNumber = input(0);
+    this.issueNumber = signal(0);
   }
 
   disagree() {
     this.confirm.emit(false);
-    this.issueNumber = input(0);
+    this.issueNumber = signal(0);
   }
 }
