@@ -1,16 +1,12 @@
 lockfileVersion: '6.0'
 
-settings:
-  autoInstallPeers: true
-  excludeLinksFromLockfile: false
-
 dependencies:
   '@angular/animations':
     specifier: 17.2.2
     version: 17.2.2(@angular/core@17.2.2)
   '@angular/cdk':
-    specifier: ^17.3.0
-    version: 17.3.0(@angular/common@17.2.2)(@angular/core@17.2.2)(rxjs@7.8.1)
+    specifier: ^17.3.8
+    version: 17.3.8(@angular/common@17.2.2)(@angular/core@17.2.2)(rxjs@7.8.1)
   '@angular/common':
     specifier: 17.2.2
     version: 17.2.2(@angular/core@17.2.2)(rxjs@7.8.1)
@@ -37,7 +33,7 @@ dependencies:
     version: 6.9.2
   '@clr/angular':
     specifier: 17.0.1
-    version: 17.0.1(@angular/cdk@17.3.0)(@angular/common@17.2.2)(@angular/core@17.2.2)(@cds/core@6.9.2)(@clr/ui@17.0.1)
+    version: 17.0.1(@angular/cdk@17.3.8)(@angular/common@17.2.2)(@angular/core@17.2.2)(@cds/core@6.9.2)(@clr/ui@17.0.1)
   '@clr/ui':
     specifier: 17.0.1
     version: 17.0.1(@cds/core@6.9.2)
@@ -567,8 +563,8 @@ packages:
       '@angular/core': 17.2.2(rxjs@7.8.1)(zone.js@0.14.4)
       tslib: 2.6.2
 
-  /@angular/cdk@17.3.0(@angular/common@17.2.2)(@angular/core@17.2.2)(rxjs@7.8.1):
-    resolution: {integrity: sha512-/RIEzP7D3wCGgk2FEvSWTvcKMa+4L7djMF6ZnOKqU6CiJLX3Ksr3+RXqXuiVkdVZBoRXEWRofS/DYEai+nIW8A==}
+  /@angular/cdk@17.3.8(@angular/common@17.2.2)(@angular/core@17.2.2)(rxjs@7.8.1):
+    resolution: {integrity: sha512-9UQovtq1R3iGppBP6c1xgnokhG3LaUObpm6htMyuQ2v034WinemoeMdHbqs/OvyUbqOUttQI/9vz37TVB0DjXA==}
     peerDependencies:
       '@angular/common': ^17.0.0 || ^18.0.0
       '@angular/core': ^17.0.0 || ^18.0.0
@@ -2165,7 +2161,7 @@ packages:
       modern-normalize: 1.1.0
     dev: false
 
-  /@clr/angular@17.0.1(@angular/cdk@17.3.0)(@angular/common@17.2.2)(@angular/core@17.2.2)(@cds/core@6.9.2)(@clr/ui@17.0.1):
+  /@clr/angular@17.0.1(@angular/cdk@17.3.8)(@angular/common@17.2.2)(@angular/core@17.2.2)(@cds/core@6.9.2)(@clr/ui@17.0.1):
     resolution: {integrity: sha512-36zROmGf0r5OArVrEunzKKKRtxSgvQGd6TgmPjSg8OMgyDr2l8jexJHooF0Hx3uXvd84rt0QoYuajMb+emOVNg==}
     peerDependencies:
       '@angular/cdk': 15 || 16 || 17
@@ -2174,7 +2170,7 @@ packages:
       '@cds/core': '>= 6.9.2'
       '@clr/ui': 17.0.1
     dependencies:
-      '@angular/cdk': 17.3.0(@angular/common@17.2.2)(@angular/core@17.2.2)(rxjs@7.8.1)
+      '@angular/cdk': 17.3.8(@angular/common@17.2.2)(@angular/core@17.2.2)(rxjs@7.8.1)
       '@angular/common': 17.2.2(@angular/core@17.2.2)(rxjs@7.8.1)
       '@angular/core': 17.2.2(rxjs@7.8.1)(zone.js@0.14.4)
       '@cds/core': 6.9.2
@@ -7712,6 +7708,8 @@ packages:
     peerDependenciesMeta:
       webpack:
         optional: true
+      webpack-sources:
+        optional: true
     dependencies:
       webpack: 5.90.3(esbuild@0.20.1)
       webpack-sources: 3.2.3
@@ -10703,3 +10701,7 @@ packages:
     resolution: {integrity: sha512-NtTUvIlNELez7Q1DzKVIFZBzNb646boQMgpATo9z3Ftuu/gWvzxCW7jdjcUDoRGxRikrhVHB/zLXh1hxeJawvw==}
     dependencies:
       tslib: 2.6.2
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
