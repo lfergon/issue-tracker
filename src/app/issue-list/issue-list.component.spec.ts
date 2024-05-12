@@ -3,12 +3,11 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { IssueListComponent } from './issue-list.component';
 import { IssuesService } from '../issues.service';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-import { Mock } from '@testing-library/angular/jest-utils';
 
 describe('IssueListComponent', () => {
   let component: IssueListComponent;
   let fixture: ComponentFixture<IssueListComponent>;
-  let mockIssuesService: IssuesService;
+  let mockIssuesService: any;
 
   beforeEach(async () => {
     mockIssuesService = {
