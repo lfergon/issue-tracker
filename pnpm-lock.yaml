@@ -1,5 +1,9 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 dependencies:
   '@angular/animations':
     specifier: 17.3.8
@@ -52,8 +56,8 @@ devDependencies:
     specifier: 17.3.7
     version: 17.3.7(@angular/compiler-cli@17.3.8)(@types/node@20.12.11)(jest@29.7.0)(typescript@5.3.3)
   '@angular-eslint/builder':
-    specifier: 17.2.1
-    version: 17.2.1(eslint@8.57.0)(typescript@5.3.3)
+    specifier: 17.4.0
+    version: 17.4.0(eslint@8.57.0)(typescript@5.3.3)
   '@angular-eslint/eslint-plugin':
     specifier: 17.2.1
     version: 17.2.1(eslint@8.57.0)(typescript@5.3.3)
@@ -368,8 +372,8 @@ packages:
       - chokidar
     dev: true
 
-  /@angular-eslint/builder@17.2.1(eslint@8.57.0)(typescript@5.3.3):
-    resolution: {integrity: sha512-O30eaR0wCPiP+zKWvXj2JM8hVq30Wok2rp7zJMFm3PurjF9nWIIyexXkE5fa538DYZYxu8N3gQRqhpv5jvTXCg==}
+  /@angular-eslint/builder@17.4.0(eslint@8.57.0)(typescript@5.3.3):
+    resolution: {integrity: sha512-+3ujbi+ar/iqAAwnJ2bTdWzQpHh9iVEPgjHUOeQhrEM8gcaOLnZXMlUyZL7D+NlXg7aDoEIxETb73dgbIBm55A==}
     peerDependencies:
       eslint: ^7.20.0 || ^8.0.0
       typescript: '*'
@@ -7294,8 +7298,6 @@ packages:
     peerDependenciesMeta:
       webpack:
         optional: true
-      webpack-sources:
-        optional: true
     dependencies:
       webpack: 5.90.3(esbuild@0.20.1)
       webpack-sources: 3.2.3
@@ -10203,7 +10205,3 @@ packages:
     resolution: {integrity: sha512-NtTUvIlNELez7Q1DzKVIFZBzNb646boQMgpATo9z3Ftuu/gWvzxCW7jdjcUDoRGxRikrhVHB/zLXh1hxeJawvw==}
     dependencies:
       tslib: 2.6.2
-
-settings:
-  autoInstallPeers: true
-  excludeLinksFromLockfile: false
