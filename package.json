@@ -14,15 +14,15 @@
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "17.3.8",
+    "@angular/animations": "17.3.9",
     "@angular/cdk": "^17.3.8",
-    "@angular/common": "17.3.8",
-    "@angular/compiler": "17.3.8",
-    "@angular/core": "17.3.8",
-    "@angular/forms": "17.3.8",
-    "@angular/platform-browser": "17.3.8",
-    "@angular/platform-browser-dynamic": "17.3.8",
-    "@angular/router": "17.3.8",
+    "@angular/common": "17.3.9",
+    "@angular/compiler": "17.3.9",
+    "@angular/core": "17.3.9",
+    "@angular/forms": "17.3.9",
+    "@angular/platform-browser": "17.3.9",
+    "@angular/platform-browser-dynamic": "17.3.9",
+    "@angular/router": "17.3.9",
     "@cds/core": "6.9.2",
     "@clr/angular": "17.0.1",
     "@clr/ui": "17.0.1",
@@ -38,7 +38,7 @@
     "@angular-eslint/schematics": "17.4.0",
     "@angular-eslint/template-parser": "17.4.1",
     "@angular/cli": "17.3.7",
-    "@angular/compiler-cli": "17.3.8",
+    "@angular/compiler-cli": "17.3.9",
     "@puppeteer/ng-schematics": "0.6.0",
     "@testing-library/angular": "16.0.0",
     "@types/jest": "29.5.12",
@@ -53,7 +53,5 @@
     "typescript": "5.3.3",
     "puppeteer": "22.9.0"
   },
-  "engines": {
-
-  }
+  "engines": {}
 }
