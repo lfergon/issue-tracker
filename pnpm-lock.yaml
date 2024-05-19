@@ -1,5 +1,9 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 dependencies:
   '@angular/animations':
     specifier: 17.3.8
@@ -64,8 +68,8 @@ devDependencies:
     specifier: 17.4.0
     version: 17.4.0(@angular/cli@17.3.7)(eslint@8.57.0)(typescript@5.3.3)
   '@angular-eslint/template-parser':
-    specifier: 17.2.1
-    version: 17.2.1(eslint@8.57.0)(typescript@5.3.3)
+    specifier: 17.4.1
+    version: 17.4.1(eslint@8.57.0)(typescript@5.3.3)
   '@angular/cli':
     specifier: 17.3.7
     version: 17.3.7
@@ -392,6 +396,10 @@ packages:
     resolution: {integrity: sha512-cYEJs4PO+QLDt1wfgWh9q8OjOphnoe1OTTFtMqm9lHl0AkBynPnFA6ghiiG5NaT03l7HXi2TQ23rLFlXl3JOBg==}
     dev: true
 
+  /@angular-eslint/bundled-angular-compiler@17.4.1:
+    resolution: {integrity: sha512-QKQGspxsyMHRwvzqo+Fj42TS/vmnwOHuWC6EN+5KBx3cuImahqFHQW842zVy9f65jfH2xDnNWJ+NW+Tzcgg+pQ==}
+    dev: true
+
   /@angular-eslint/eslint-plugin-template@17.2.1(eslint@8.57.0)(typescript@5.3.3):
     resolution: {integrity: sha512-hl1hcHtcm90wyVL1OQGTz16oA0KHon+FFb3Qg0fLXObaXxA495Ecefd9ub5Xxg4JEOPRDi29bF1Y3YKpwflgeg==}
     peerDependencies:
@@ -479,13 +487,13 @@ packages:
       - typescript
     dev: true
 
-  /@angular-eslint/template-parser@17.2.1(eslint@8.57.0)(typescript@5.3.3):
-    resolution: {integrity: sha512-WPQYFvRju0tCDXQ/pwrzC911pE07JvpeDgcN2elhzV6lxDHJEZpA5O9pnW9qgNA6J6XM9Q7dBkJ22ztAzC4WFw==}
+  /@angular-eslint/template-parser@17.4.1(eslint@8.57.0)(typescript@5.3.3):
+    resolution: {integrity: sha512-fJQpwQXexgs7Z3yYpQAfuAkFB2Y5H8SSlo+eAPPafOOPpPSIm/yP4dQ2e06tE8zWB5yjYnVBMJnUKSmG5GJSDw==}
     peerDependencies:
       eslint: ^7.20.0 || ^8.0.0
       typescript: '*'
     dependencies:
-      '@angular-eslint/bundled-angular-compiler': 17.2.1
+      '@angular-eslint/bundled-angular-compiler': 17.4.1
       eslint: 8.57.0
       eslint-scope: 8.0.0
       typescript: 5.3.3
@@ -7294,8 +7302,6 @@ packages:
     peerDependenciesMeta:
       webpack:
         optional: true
-      webpack-sources:
-        optional: true
     dependencies:
       webpack: 5.90.3(esbuild@0.20.1)
       webpack-sources: 3.2.3
@@ -10203,7 +10209,3 @@ packages:
     resolution: {integrity: sha512-NtTUvIlNELez7Q1DzKVIFZBzNb646boQMgpATo9z3Ftuu/gWvzxCW7jdjcUDoRGxRikrhVHB/zLXh1hxeJawvw==}
     dependencies:
       tslib: 2.6.2
-
-settings:
-  autoInstallPeers: true
-  excludeLinksFromLockfile: false
