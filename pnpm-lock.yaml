@@ -1,5 +1,9 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 dependencies:
   '@angular/animations':
     specifier: 17.3.9
@@ -29,14 +33,14 @@ dependencies:
     specifier: 17.3.9
     version: 17.3.9(@angular/common@17.3.9)(@angular/core@17.3.9)(@angular/platform-browser@17.3.9)(rxjs@7.8.1)
   '@cds/core':
-    specifier: 6.9.2
-    version: 6.9.2
+    specifier: 6.10.0
+    version: 6.10.0
   '@clr/angular':
     specifier: 17.0.1
-    version: 17.0.1(@angular/cdk@17.3.9)(@angular/common@17.3.9)(@angular/core@17.3.9)(@cds/core@6.9.2)(@clr/ui@17.0.1)
+    version: 17.0.1(@angular/cdk@17.3.9)(@angular/common@17.3.9)(@angular/core@17.3.9)(@cds/core@6.10.0)(@clr/ui@17.0.1)
   '@clr/ui':
     specifier: 17.0.1
-    version: 17.0.1(@cds/core@6.9.2)
+    version: 17.0.1(@cds/core@6.10.0)
   rxjs:
     specifier: 7.8.1
     version: 7.8.1
@@ -1920,8 +1924,8 @@ packages:
     dev: false
     optional: true
 
-  /@cds/core@6.9.2:
-    resolution: {integrity: sha512-Tx5L8/kLueBoSpu18w9eLonqFk1CVromp9bBXk6FLVVmYghE/lSt/WsYi6c0xyv7rJZpcHoGS/gh5p9Erelk3Q==}
+  /@cds/core@6.10.0:
+    resolution: {integrity: sha512-6hY5Nk+VCEwICgTwlmCbNkd54sQwwQn8SSg3wjZQ8zQq9gvsjTGDMysZ2GJgeRLB8K1eJbgQuA/VXdQ+T+5MlA==}
     dependencies:
       lit: 2.8.0
       ramda: 0.29.1
@@ -1931,7 +1935,7 @@ packages:
       modern-normalize: 1.1.0
     dev: false
 
-  /@clr/angular@17.0.1(@angular/cdk@17.3.9)(@angular/common@17.3.9)(@angular/core@17.3.9)(@cds/core@6.9.2)(@clr/ui@17.0.1):
+  /@clr/angular@17.0.1(@angular/cdk@17.3.9)(@angular/common@17.3.9)(@angular/core@17.3.9)(@cds/core@6.10.0)(@clr/ui@17.0.1):
     resolution: {integrity: sha512-36zROmGf0r5OArVrEunzKKKRtxSgvQGd6TgmPjSg8OMgyDr2l8jexJHooF0Hx3uXvd84rt0QoYuajMb+emOVNg==}
     peerDependencies:
       '@angular/cdk': 15 || 16 || 17
@@ -1943,17 +1947,17 @@ packages:
       '@angular/cdk': 17.3.9(@angular/common@17.3.9)(@angular/core@17.3.9)(rxjs@7.8.1)
       '@angular/common': 17.3.9(@angular/core@17.3.9)(rxjs@7.8.1)
       '@angular/core': 17.3.9(rxjs@7.8.1)(zone.js@0.14.4)
-      '@cds/core': 6.9.2
-      '@clr/ui': 17.0.1(@cds/core@6.9.2)
+      '@cds/core': 6.10.0
+      '@clr/ui': 17.0.1(@cds/core@6.10.0)
       tslib: 2.6.2
     dev: false
 
-  /@clr/ui@17.0.1(@cds/core@6.9.2):
+  /@clr/ui@17.0.1(@cds/core@6.10.0):
     resolution: {integrity: sha512-t7BncCbYUlyGnNiSJqSnNtvbnpmChVT2Km0JboZR03EqxfnYKWI/0AlpEKcQx3JYAWRL4xxYGExbLxOB8B13ZA==}
     peerDependencies:
       '@cds/core': ^6.9.2
     dependencies:
-      '@cds/core': 6.9.2
+      '@cds/core': 6.10.0
     dev: false
 
   /@discoveryjs/json-ext@0.5.7:
@@ -7155,8 +7159,6 @@ packages:
     peerDependenciesMeta:
       webpack:
         optional: true
-      webpack-sources:
-        optional: true
     dependencies:
       webpack: 5.90.3(esbuild@0.20.1)
       webpack-sources: 3.2.3
@@ -10052,7 +10054,3 @@ packages:
     resolution: {integrity: sha512-NtTUvIlNELez7Q1DzKVIFZBzNb646boQMgpATo9z3Ftuu/gWvzxCW7jdjcUDoRGxRikrhVHB/zLXh1hxeJawvw==}
     dependencies:
       tslib: 2.6.2
-
-settings:
-  autoInstallPeers: true
-  excludeLinksFromLockfile: false
