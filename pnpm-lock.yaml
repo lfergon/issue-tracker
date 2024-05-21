@@ -19,7 +19,7 @@ dependencies:
     version: 17.3.9(@angular/core@17.3.9)
   '@angular/core':
     specifier: 17.3.9
-    version: 17.3.9(rxjs@7.8.1)(zone.js@0.14.4)
+    version: 17.3.9(rxjs@7.8.1)(zone.js@0.14.6)
   '@angular/forms':
     specifier: 17.3.9
     version: 17.3.9(@angular/common@17.3.9)(@angular/core@17.3.9)(@angular/platform-browser@17.3.9)(rxjs@7.8.1)
@@ -48,8 +48,8 @@ dependencies:
     specifier: 2.6.2
     version: 2.6.2
   zone.js:
-    specifier: 0.14.4
-    version: 0.14.4
+    specifier: 0.14.6
+    version: 0.14.6
 
 devDependencies:
   '@angular-devkit/build-angular':
@@ -479,7 +479,7 @@ packages:
     peerDependencies:
       '@angular/core': 17.3.9
     dependencies:
-      '@angular/core': 17.3.9(rxjs@7.8.1)(zone.js@0.14.4)
+      '@angular/core': 17.3.9(rxjs@7.8.1)(zone.js@0.14.6)
       tslib: 2.6.2
 
   /@angular/cdk@17.3.9(@angular/common@17.3.9)(@angular/core@17.3.9)(rxjs@7.8.1):
@@ -490,7 +490,7 @@ packages:
       rxjs: ^6.5.3 || ^7.4.0
     dependencies:
       '@angular/common': 17.3.9(@angular/core@17.3.9)(rxjs@7.8.1)
-      '@angular/core': 17.3.9(rxjs@7.8.1)(zone.js@0.14.4)
+      '@angular/core': 17.3.9(rxjs@7.8.1)(zone.js@0.14.6)
       rxjs: 7.8.1
       tslib: 2.6.2
     optionalDependencies:
@@ -533,7 +533,7 @@ packages:
       '@angular/core': 17.3.9
       rxjs: ^6.5.3 || ^7.4.0
     dependencies:
-      '@angular/core': 17.3.9(rxjs@7.8.1)(zone.js@0.14.4)
+      '@angular/core': 17.3.9(rxjs@7.8.1)(zone.js@0.14.6)
       rxjs: 7.8.1
       tslib: 2.6.2
 
@@ -568,10 +568,10 @@ packages:
       '@angular/core':
         optional: true
     dependencies:
-      '@angular/core': 17.3.9(rxjs@7.8.1)(zone.js@0.14.4)
+      '@angular/core': 17.3.9(rxjs@7.8.1)(zone.js@0.14.6)
       tslib: 2.6.2
 
-  /@angular/core@17.3.9(rxjs@7.8.1)(zone.js@0.14.4):
+  /@angular/core@17.3.9(rxjs@7.8.1)(zone.js@0.14.6):
     resolution: {integrity: sha512-x+h5BQ6islvYWGVLTz1CEgNq1/5IYngQ+Inq/tWayM6jN7RPOCydCCbCw+uOZS7MgFebkP0gYTVm14y1MRFKSQ==}
     engines: {node: ^18.13.0 || >=20.9.0}
     peerDependencies:
@@ -580,7 +580,7 @@ packages:
     dependencies:
       rxjs: 7.8.1
       tslib: 2.6.2
-      zone.js: 0.14.4
+      zone.js: 0.14.6
 
   /@angular/forms@17.3.9(@angular/common@17.3.9)(@angular/core@17.3.9)(@angular/platform-browser@17.3.9)(rxjs@7.8.1):
     resolution: {integrity: sha512-5b8OjK0kLghrdxkVWglgerHVp9D5WvXInXwo1KIyc2v/fGdTlyu/RFi0GLGvzq2y+7Z8TvtXWC82SB47vfx3TQ==}
@@ -592,7 +592,7 @@ packages:
       rxjs: ^6.5.3 || ^7.4.0
     dependencies:
       '@angular/common': 17.3.9(@angular/core@17.3.9)(rxjs@7.8.1)
-      '@angular/core': 17.3.9(rxjs@7.8.1)(zone.js@0.14.4)
+      '@angular/core': 17.3.9(rxjs@7.8.1)(zone.js@0.14.6)
       '@angular/platform-browser': 17.3.9(@angular/animations@17.3.9)(@angular/common@17.3.9)(@angular/core@17.3.9)
       rxjs: 7.8.1
       tslib: 2.6.2
@@ -609,7 +609,7 @@ packages:
     dependencies:
       '@angular/common': 17.3.9(@angular/core@17.3.9)(rxjs@7.8.1)
       '@angular/compiler': 17.3.9(@angular/core@17.3.9)
-      '@angular/core': 17.3.9(rxjs@7.8.1)(zone.js@0.14.4)
+      '@angular/core': 17.3.9(rxjs@7.8.1)(zone.js@0.14.6)
       '@angular/platform-browser': 17.3.9(@angular/animations@17.3.9)(@angular/common@17.3.9)(@angular/core@17.3.9)
       tslib: 2.6.2
 
@@ -626,7 +626,7 @@ packages:
     dependencies:
       '@angular/animations': 17.3.9(@angular/core@17.3.9)
       '@angular/common': 17.3.9(@angular/core@17.3.9)(rxjs@7.8.1)
-      '@angular/core': 17.3.9(rxjs@7.8.1)(zone.js@0.14.4)
+      '@angular/core': 17.3.9(rxjs@7.8.1)(zone.js@0.14.6)
       tslib: 2.6.2
 
   /@angular/router@17.3.9(@angular/common@17.3.9)(@angular/core@17.3.9)(@angular/platform-browser@17.3.9)(rxjs@7.8.1):
@@ -639,7 +639,7 @@ packages:
       rxjs: ^6.5.3 || ^7.4.0
     dependencies:
       '@angular/common': 17.3.9(@angular/core@17.3.9)(rxjs@7.8.1)
-      '@angular/core': 17.3.9(rxjs@7.8.1)(zone.js@0.14.4)
+      '@angular/core': 17.3.9(rxjs@7.8.1)(zone.js@0.14.6)
       '@angular/platform-browser': 17.3.9(@angular/animations@17.3.9)(@angular/common@17.3.9)(@angular/core@17.3.9)
       rxjs: 7.8.1
       tslib: 2.6.2
@@ -1946,7 +1946,7 @@ packages:
     dependencies:
       '@angular/cdk': 17.3.9(@angular/common@17.3.9)(@angular/core@17.3.9)(rxjs@7.8.1)
       '@angular/common': 17.3.9(@angular/core@17.3.9)(rxjs@7.8.1)
-      '@angular/core': 17.3.9(rxjs@7.8.1)(zone.js@0.14.4)
+      '@angular/core': 17.3.9(rxjs@7.8.1)(zone.js@0.14.6)
       '@cds/core': 6.10.0
       '@clr/ui': 17.0.1(@cds/core@6.10.0)
       tslib: 2.6.2
@@ -3211,7 +3211,7 @@ packages:
       '@angular/router': '>= 17.0.0'
     dependencies:
       '@angular/common': 17.3.9(@angular/core@17.3.9)(rxjs@7.8.1)
-      '@angular/core': 17.3.9(rxjs@7.8.1)(zone.js@0.14.4)
+      '@angular/core': 17.3.9(rxjs@7.8.1)(zone.js@0.14.6)
       '@angular/platform-browser': 17.3.9(@angular/animations@17.3.9)(@angular/common@17.3.9)(@angular/core@17.3.9)
       '@angular/router': 17.3.9(@angular/common@17.3.9)(@angular/core@17.3.9)(@angular/platform-browser@17.3.9)(rxjs@7.8.1)
       '@testing-library/dom': 10.1.0
@@ -6726,7 +6726,7 @@ packages:
     dependencies:
       '@angular-devkit/build-angular': 17.3.7(@angular/compiler-cli@17.3.9)(@types/node@20.12.12)(jest@29.7.0)(typescript@5.3.3)
       '@angular/compiler-cli': 17.3.9(@angular/compiler@17.3.9)(typescript@5.3.3)
-      '@angular/core': 17.3.9(rxjs@7.8.1)(zone.js@0.14.4)
+      '@angular/core': 17.3.9(rxjs@7.8.1)(zone.js@0.14.6)
       '@angular/platform-browser-dynamic': 17.3.9(@angular/common@17.3.9)(@angular/compiler@17.3.9)(@angular/core@17.3.9)(@angular/platform-browser@17.3.9)
       bs-logger: 0.2.6
       esbuild-wasm: 0.20.1
@@ -10050,7 +10050,5 @@ packages:
     resolution: {integrity: sha512-iC+8Io04lddc+mVqQ9AZ7OQ2MrUKGN+oIQyq1vemgt46jwCwLfhq7/pwnBnNXXXZb8VTVLKwp9EDkx+ryxIWmg==}
     dev: true
 
-  /zone.js@0.14.4:
-    resolution: {integrity: sha512-NtTUvIlNELez7Q1DzKVIFZBzNb646boQMgpATo9z3Ftuu/gWvzxCW7jdjcUDoRGxRikrhVHB/zLXh1hxeJawvw==}
-    dependencies:
-      tslib: 2.6.2
+  /zone.js@0.14.6:
+    resolution: {integrity: sha512-vyRNFqofdaHVdWAy7v3Bzmn84a1JHWSjpuTZROT/uYn8I3p2cmo7Ro9twFmYRQDPhiYOV7QLk0hhY4JJQVqS6Q==}
