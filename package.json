@@ -50,7 +50,7 @@
     "jest-preset-angular": "14.1.0",
     "prettier": "3.2.5",
     "resize-observer-polyfill": "1.5.1",
-    "typescript": "5.3.3",
+    "typescript": "5.4.5",
     "puppeteer": "22.9.0"
   },
   "engines": {}
