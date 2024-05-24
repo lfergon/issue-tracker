@@ -68,8 +68,8 @@ devDependencies:
     specifier: 17.4.1
     version: 17.4.1(@angular/cli@17.3.8)(eslint@8.57.0)(typescript@5.4.5)
   '@angular-eslint/template-parser':
-    specifier: 17.4.1
-    version: 17.4.1(eslint@8.57.0)(typescript@5.4.5)
+    specifier: 17.5.1
+    version: 17.5.1(eslint@8.57.0)(typescript@5.4.5)
   '@angular/cli':
     specifier: 17.3.8
     version: 17.3.8
@@ -496,13 +496,13 @@ packages:
       - typescript
     dev: true
 
-  /@angular-eslint/template-parser@17.4.1(eslint@8.57.0)(typescript@5.4.5):
-    resolution: {integrity: sha512-fJQpwQXexgs7Z3yYpQAfuAkFB2Y5H8SSlo+eAPPafOOPpPSIm/yP4dQ2e06tE8zWB5yjYnVBMJnUKSmG5GJSDw==}
+  /@angular-eslint/template-parser@17.5.1(eslint@8.57.0)(typescript@5.4.5):
+    resolution: {integrity: sha512-DJcYacYEb17uUlQFYIKSjmlzWJEfev5pOMddDewV3h6oVm4T77X1SH/u8n5Oz1Zy13TrLWponwFORCKhg7nOfg==}
     peerDependencies:
       eslint: ^7.20.0 || ^8.0.0
       typescript: '*'
     dependencies:
-      '@angular-eslint/bundled-angular-compiler': 17.4.1
+      '@angular-eslint/bundled-angular-compiler': 17.5.1
       eslint: 8.57.0
       eslint-scope: 8.0.0
       typescript: 5.4.5
