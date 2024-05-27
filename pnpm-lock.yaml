@@ -107,8 +107,8 @@ devDependencies:
     specifier: 3.2.5
     version: 3.2.5
   puppeteer:
-    specifier: 22.9.0
-    version: 22.9.0(typescript@5.4.5)
+    specifier: 22.10.0
+    version: 22.10.0(typescript@5.4.5)
   resize-observer-polyfill:
     specifier: 1.5.1
     version: 1.5.1
@@ -8397,8 +8397,8 @@ packages:
     engines: {node: '>=6'}
     dev: true
 
-  /puppeteer-core@22.9.0:
-    resolution: {integrity: sha512-Q2SYVZ1SIE7jCd/Pp+1/mNLFtdJfGvAF+CqOTDG8HcCNCiBvoXfopXfOfMHQ/FueXhGfJW/I6DartWv6QzpNGg==}
+  /puppeteer-core@22.10.0:
+    resolution: {integrity: sha512-I54J4Vy4I07UHsgB1QSmuFoF7KNQjJWcvFBPhtY+ezMdBfwgGDr8dzYrJa11aPgP9kxIUHjhktcMmmfJkOAtTw==}
     engines: {node: '>=18'}
     dependencies:
       '@puppeteer/browsers': 2.2.3
@@ -8412,8 +8412,8 @@ packages:
       - utf-8-validate
     dev: true
 
-  /puppeteer@22.9.0(typescript@5.4.5):
-    resolution: {integrity: sha512-yNux2cm6Sfik4lNLNjJ25Cdn9spJRbMXxl1YZtVZCEhEeej1sFlCvZ/Cr64LhgyJOuvz3iq2uk+RLFpQpGwrjw==}
+  /puppeteer@22.10.0(typescript@5.4.5):
+    resolution: {integrity: sha512-ZOkZd6a6t0BdKcWb0wAYHWQqCfdlN1PPnXOmg/XNrbo6gJhYWFX4qCNb6ahSn8TpAqBqLCoD4Q010F7GwOM7mA==}
     engines: {node: '>=18'}
     hasBin: true
     requiresBuild: true
@@ -8421,7 +8421,7 @@ packages:
       '@puppeteer/browsers': 2.2.3
       cosmiconfig: 9.0.0(typescript@5.4.5)
       devtools-protocol: 0.0.1286932
-      puppeteer-core: 22.9.0
+      puppeteer-core: 22.10.0
     transitivePeerDependencies:
       - bufferutil
       - supports-color
@@ -9816,7 +9816,7 @@ packages:
       spdy: 4.0.2
       webpack: 5.90.3(esbuild@0.20.1)
       webpack-dev-middleware: 5.3.4(webpack@5.90.3)
-      ws: 8.16.0
+      ws: 8.17.0
     transitivePeerDependencies:
       - bufferutil
       - debug
@@ -9983,19 +9983,6 @@ packages:
     dependencies:
       imurmurhash: 0.1.4
       signal-exit: 3.0.7
-    dev: true
-
-  /ws@8.16.0:
-    resolution: {integrity: sha512-HS0c//TP7Ina87TfiPUz1rQzMhHrl/SG2guqRcTOIUYD2q8uhUdNHZYJUaQ8aTGPzCh+c6oawMKW35nFl1dxyQ==}
-    engines: {node: '>=10.0.0'}
-    peerDependencies:
-      bufferutil: ^4.0.1
-      utf-8-validate: '>=5.0.2'
-    peerDependenciesMeta:
-      bufferutil:
-        optional: true
-      utf-8-validate:
-        optional: true
     dev: true
 
   /ws@8.17.0:
