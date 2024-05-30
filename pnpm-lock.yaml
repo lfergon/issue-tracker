@@ -33,14 +33,14 @@ dependencies:
     specifier: 17.3.9
     version: 17.3.9(@angular/common@17.3.9)(@angular/core@17.3.9)(@angular/platform-browser@17.3.9)(rxjs@7.8.1)
   '@cds/core':
-    specifier: 6.10.0
-    version: 6.10.0
+    specifier: 6.11.0
+    version: 6.11.0
   '@clr/angular':
     specifier: 17.0.1
-    version: 17.0.1(@angular/cdk@17.3.10)(@angular/common@17.3.9)(@angular/core@17.3.9)(@cds/core@6.10.0)(@clr/ui@17.0.1)
+    version: 17.0.1(@angular/cdk@17.3.10)(@angular/common@17.3.9)(@angular/core@17.3.9)(@cds/core@6.11.0)(@clr/ui@17.0.1)
   '@clr/ui':
     specifier: 17.0.1
-    version: 17.0.1(@cds/core@6.10.0)
+    version: 17.0.1(@cds/core@6.11.0)
   rxjs:
     specifier: 7.8.1
     version: 7.8.1
@@ -1951,8 +1951,8 @@ packages:
     dev: false
     optional: true
 
-  /@cds/core@6.10.0:
-    resolution: {integrity: sha512-6hY5Nk+VCEwICgTwlmCbNkd54sQwwQn8SSg3wjZQ8zQq9gvsjTGDMysZ2GJgeRLB8K1eJbgQuA/VXdQ+T+5MlA==}
+  /@cds/core@6.11.0:
+    resolution: {integrity: sha512-7tNZeLEfpcNdDN85jV9137zxy7euqBCtG8SRNX0E8XGMMODs7JpxvORahhwRGwd7geSbZpA70urNo+h5Y2Mqrg==}
     dependencies:
       lit: 2.8.0
       ramda: 0.29.1
@@ -1962,7 +1962,7 @@ packages:
       modern-normalize: 1.1.0
     dev: false
 
-  /@clr/angular@17.0.1(@angular/cdk@17.3.10)(@angular/common@17.3.9)(@angular/core@17.3.9)(@cds/core@6.10.0)(@clr/ui@17.0.1):
+  /@clr/angular@17.0.1(@angular/cdk@17.3.10)(@angular/common@17.3.9)(@angular/core@17.3.9)(@cds/core@6.11.0)(@clr/ui@17.0.1):
     resolution: {integrity: sha512-36zROmGf0r5OArVrEunzKKKRtxSgvQGd6TgmPjSg8OMgyDr2l8jexJHooF0Hx3uXvd84rt0QoYuajMb+emOVNg==}
     peerDependencies:
       '@angular/cdk': 15 || 16 || 17
@@ -1974,17 +1974,17 @@ packages:
       '@angular/cdk': 17.3.10(@angular/common@17.3.9)(@angular/core@17.3.9)(rxjs@7.8.1)
       '@angular/common': 17.3.9(@angular/core@17.3.9)(rxjs@7.8.1)
       '@angular/core': 17.3.9(rxjs@7.8.1)(zone.js@0.14.6)
-      '@cds/core': 6.10.0
-      '@clr/ui': 17.0.1(@cds/core@6.10.0)
+      '@cds/core': 6.11.0
+      '@clr/ui': 17.0.1(@cds/core@6.11.0)
       tslib: 2.6.2
     dev: false
 
-  /@clr/ui@17.0.1(@cds/core@6.10.0):
+  /@clr/ui@17.0.1(@cds/core@6.11.0):
     resolution: {integrity: sha512-t7BncCbYUlyGnNiSJqSnNtvbnpmChVT2Km0JboZR03EqxfnYKWI/0AlpEKcQx3JYAWRL4xxYGExbLxOB8B13ZA==}
     peerDependencies:
       '@cds/core': ^6.9.2
     dependencies:
-      '@cds/core': 6.10.0
+      '@cds/core': 6.11.0
     dev: false
 
   /@discoveryjs/json-ext@0.5.7:
