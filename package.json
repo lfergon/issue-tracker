@@ -25,7 +25,7 @@
     "@angular/router": "18.0.1",
     "@cds/core": "6.11.0",
     "@clr/angular": "17.0.1",
-    "@clr/ui": "17.0.1",
+    "@clr/ui": "17.2.0",
     "rxjs": "7.8.1",
     "tslib": "2.6.2",
     "zone.js": "0.14.6"
