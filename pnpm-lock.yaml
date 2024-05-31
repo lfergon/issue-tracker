@@ -65,8 +65,8 @@ devDependencies:
     specifier: 18.0.1
     version: 18.0.1(@typescript-eslint/utils@8.0.0-alpha.20)(eslint@8.57.0)(typescript@5.4.5)
   '@angular-eslint/schematics':
-    specifier: 18.0.0
-    version: 18.0.0(@angular-devkit/core@18.0.2)(@angular-devkit/schematics@18.0.2)(eslint@8.57.0)(typescript@5.4.5)
+    specifier: 18.0.1
+    version: 18.0.1(@angular-devkit/core@18.0.2)(@angular-devkit/schematics@18.0.2)(@typescript-eslint/utils@8.0.0-alpha.20)(eslint@8.57.0)(typescript@5.4.5)
   '@angular-eslint/template-parser':
     specifier: 18.0.1
     version: 18.0.1(eslint@8.57.0)(typescript@5.4.5)
@@ -396,23 +396,6 @@ packages:
     resolution: {integrity: sha512-lr4Ysoo28FBOKcJFQUGTMpbWDcak+gyuYvyggp37ERvazE6EDomPFxzEHNqVT9EI9sZ+GDBOoPR+EdFh0ALGNw==}
     dev: true
 
-  /@angular-eslint/eslint-plugin-template@18.0.0(eslint@8.57.0)(typescript@5.4.5):
-    resolution: {integrity: sha512-KN32zW5eutRLumjJNGM77pZ4dpQe/PlffU2fGGVagHSDRrjaEqBmJ/khecUHjz3+VxYLbVWBM2skfb5jC4Lr2g==}
-    peerDependencies:
-      eslint: ^8.57.0 || ^9.0.0
-      typescript: '*'
-    dependencies:
-      '@angular-eslint/bundled-angular-compiler': 18.0.0
-      '@angular-eslint/utils': 18.0.0(eslint@8.57.0)(typescript@5.4.5)
-      '@typescript-eslint/utils': 8.0.0-alpha.20(eslint@8.57.0)(typescript@5.4.5)
-      aria-query: 5.3.0
-      axobject-query: 4.0.0
-      eslint: 8.57.0
-      typescript: 5.4.5
-    transitivePeerDependencies:
-      - supports-color
-    dev: true
-
   /@angular-eslint/eslint-plugin-template@18.0.1(@typescript-eslint/utils@8.0.0-alpha.20)(eslint@8.57.0)(typescript@5.4.5):
     resolution: {integrity: sha512-u/eov/CFBb8l35D8dW78Dx5fBLd8FZFibKN9XQknhzXnDMpISuUOMny5g5/wvYYjqLgqEySXMiHKEAxEup7xtA==}
     peerDependencies:
@@ -444,16 +427,30 @@ packages:
       - supports-color
     dev: true
 
-  /@angular-eslint/schematics@18.0.0(@angular-devkit/core@18.0.2)(@angular-devkit/schematics@18.0.2)(eslint@8.57.0)(typescript@5.4.5):
-    resolution: {integrity: sha512-s/y+jzwyLi+/HtyUsbP6EjK877TViIGmA1sWw7FHHssRRqBdCoKjDLVeQKJKquOFB/IYSZlpB6KWPzbMFpMv3A==}
+  /@angular-eslint/eslint-plugin@18.0.1(@typescript-eslint/utils@8.0.0-alpha.20)(eslint@8.57.0)(typescript@5.4.5):
+    resolution: {integrity: sha512-pS3SYLa9DA+ENklGxEUlcw6/xCxgDk9fgjyaheuSjDxL3TIh1pTa4V2TptODdcPh7XCYXiVmy+e/w79mXlGzOw==}
+    peerDependencies:
+      '@typescript-eslint/utils': ^7.11.0 || ^8.0.0-alpha.20
+      eslint: ^8.57.0 || ^9.0.0
+      typescript: '*'
+    dependencies:
+      '@angular-eslint/bundled-angular-compiler': 18.0.1
+      '@angular-eslint/utils': 18.0.1(@typescript-eslint/utils@8.0.0-alpha.20)(eslint@8.57.0)(typescript@5.4.5)
+      '@typescript-eslint/utils': 8.0.0-alpha.20(eslint@8.57.0)(typescript@5.4.5)
+      eslint: 8.57.0
+      typescript: 5.4.5
+    dev: true
+
+  /@angular-eslint/schematics@18.0.1(@angular-devkit/core@18.0.2)(@angular-devkit/schematics@18.0.2)(@typescript-eslint/utils@8.0.0-alpha.20)(eslint@8.57.0)(typescript@5.4.5):
+    resolution: {integrity: sha512-G9PgFrjyvBaQR8enMnP2scnQDLk99GMpifh3voiOmdEkxaQHRWqhCWncV7GATwpXDzeyj9J9XT9iHGJjnZTpJQ==}
     peerDependencies:
       '@angular-devkit/core': '>= 18.0.0 < 19.0.0'
       '@angular-devkit/schematics': '>= 18.0.0 < 19.0.0'
     dependencies:
       '@angular-devkit/core': 18.0.2
       '@angular-devkit/schematics': 18.0.2
-      '@angular-eslint/eslint-plugin': 18.0.0(eslint@8.57.0)(typescript@5.4.5)
-      '@angular-eslint/eslint-plugin-template': 18.0.0(eslint@8.57.0)(typescript@5.4.5)
+      '@angular-eslint/eslint-plugin': 18.0.1(@typescript-eslint/utils@8.0.0-alpha.20)(eslint@8.57.0)(typescript@5.4.5)
+      '@angular-eslint/eslint-plugin-template': 18.0.1(@typescript-eslint/utils@8.0.0-alpha.20)(eslint@8.57.0)(typescript@5.4.5)
       '@nx/devkit': 19.1.1(nx@19.1.1)
       ignore: 5.3.1
       nx: 19.1.1
@@ -462,9 +459,9 @@ packages:
     transitivePeerDependencies:
       - '@swc-node/register'
       - '@swc/core'
+      - '@typescript-eslint/utils'
       - debug
       - eslint
-      - supports-color
       - typescript
     dev: true
 
