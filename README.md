@@ -1,6 +1,6 @@
 # IssueTracker
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.2
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.1
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/f01b81b3-a816-46b2-b94e-fa3cbfcdc175/deploy-status)](https://app.netlify.com/sites/tangerine-kelpie-63f4e5/deploys)
 
