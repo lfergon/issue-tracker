@@ -1,5 +1,9 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 dependencies:
   '@angular/animations':
     specifier: 18.0.1
@@ -41,8 +45,8 @@ dependencies:
     specifier: 7.8.1
     version: 7.8.1
   tslib:
-    specifier: 2.6.2
-    version: 2.6.2
+    specifier: 2.6.3
+    version: 2.6.3
   zone.js:
     specifier: 0.14.6
     version: 0.14.6
@@ -507,7 +511,7 @@ packages:
       '@angular/core': 18.0.1
     dependencies:
       '@angular/core': 18.0.1(rxjs@7.8.1)(zone.js@0.14.6)
-      tslib: 2.6.2
+      tslib: 2.6.3
 
   /@angular/build@18.0.2(@angular/compiler-cli@18.0.1)(@types/node@20.12.13)(less@4.2.0)(postcss@8.4.38)(terser@5.31.0)(typescript@5.4.5):
     resolution: {integrity: sha512-iPPHdAJ3LiR8t/+39xjvrqMWcTmRrfphzKxXoIVDcswQjVQIk00EYuxinC6EVa7dSKDl1thk1MeCNZ9DIjaAvQ==}
@@ -584,7 +588,7 @@ packages:
       '@angular/common': 18.0.1(@angular/core@18.0.1)(rxjs@7.8.1)
       '@angular/core': 18.0.1(rxjs@7.8.1)(zone.js@0.14.6)
       rxjs: 7.8.1
-      tslib: 2.6.2
+      tslib: 2.6.3
     optionalDependencies:
       parse5: 7.1.2
     dev: false
@@ -626,7 +630,7 @@ packages:
     dependencies:
       '@angular/core': 18.0.1(rxjs@7.8.1)(zone.js@0.14.6)
       rxjs: 7.8.1
-      tslib: 2.6.2
+      tslib: 2.6.3
 
   /@angular/compiler-cli@18.0.1(@angular/compiler@18.0.1)(typescript@5.4.5):
     resolution: {integrity: sha512-Aoz70+/o8R2lG2EGDAYbj6yu2B7kqa/9loYEwG0fECJTtXoRBP+bEGpUxMmxOb59tMDnbIhBHmNPPEQVTXvgSQ==}
@@ -643,7 +647,7 @@ packages:
       convert-source-map: 1.9.0
       reflect-metadata: 0.2.1
       semver: 7.6.2
-      tslib: 2.6.2
+      tslib: 2.6.3
       typescript: 5.4.5
       yargs: 17.7.2
     transitivePeerDependencies:
@@ -660,7 +664,7 @@ packages:
         optional: true
     dependencies:
       '@angular/core': 18.0.1(rxjs@7.8.1)(zone.js@0.14.6)
-      tslib: 2.6.2
+      tslib: 2.6.3
 
   /@angular/core@18.0.1(rxjs@7.8.1)(zone.js@0.14.6):
     resolution: {integrity: sha512-Db1livvugoLdLsWww5IqUS5v+yUN7/5Rj0trZv9BgxIuoNtoipfLqKHwZWpumH3yI5Ucu+UH9zZ1mlGyF0Kexw==}
@@ -670,7 +674,7 @@ packages:
       zone.js: ~0.14.0
     dependencies:
       rxjs: 7.8.1
-      tslib: 2.6.2
+      tslib: 2.6.3
       zone.js: 0.14.6
 
   /@angular/forms@18.0.1(@angular/common@18.0.1)(@angular/core@18.0.1)(@angular/platform-browser@18.0.1)(rxjs@7.8.1):
@@ -686,7 +690,7 @@ packages:
       '@angular/core': 18.0.1(rxjs@7.8.1)(zone.js@0.14.6)
       '@angular/platform-browser': 18.0.1(@angular/animations@18.0.1)(@angular/common@18.0.1)(@angular/core@18.0.1)
       rxjs: 7.8.1
-      tslib: 2.6.2
+      tslib: 2.6.3
     dev: false
 
   /@angular/platform-browser-dynamic@18.0.1(@angular/common@18.0.1)(@angular/compiler@18.0.1)(@angular/core@18.0.1)(@angular/platform-browser@18.0.1):
@@ -702,7 +706,7 @@ packages:
       '@angular/compiler': 18.0.1(@angular/core@18.0.1)
       '@angular/core': 18.0.1(rxjs@7.8.1)(zone.js@0.14.6)
       '@angular/platform-browser': 18.0.1(@angular/animations@18.0.1)(@angular/common@18.0.1)(@angular/core@18.0.1)
-      tslib: 2.6.2
+      tslib: 2.6.3
 
   /@angular/platform-browser@18.0.1(@angular/animations@18.0.1)(@angular/common@18.0.1)(@angular/core@18.0.1):
     resolution: {integrity: sha512-rQUsOxZxiwSPvyHdne60IKIGsvFoVc1rO4mDyXU+9sCCLmPKHzNyEzp7vybTZeiqa3k6v3sV/bfHWwrRzmvenw==}
@@ -718,7 +722,7 @@ packages:
       '@angular/animations': 18.0.1(@angular/core@18.0.1)
       '@angular/common': 18.0.1(@angular/core@18.0.1)(rxjs@7.8.1)
       '@angular/core': 18.0.1(rxjs@7.8.1)(zone.js@0.14.6)
-      tslib: 2.6.2
+      tslib: 2.6.3
 
   /@angular/router@18.0.1(@angular/common@18.0.1)(@angular/core@18.0.1)(@angular/platform-browser@18.0.1)(rxjs@7.8.1):
     resolution: {integrity: sha512-PapdvfATjRZI0cJ/RH8n/ixHDHa4HIBaOMwhgU73InU9t6NIhBXg6aRECYV2qGt7NtpLYSHmG5Z1Ws86rm5Tyw==}
@@ -733,7 +737,7 @@ packages:
       '@angular/core': 18.0.1(rxjs@7.8.1)(zone.js@0.14.6)
       '@angular/platform-browser': 18.0.1(@angular/animations@18.0.1)(@angular/common@18.0.1)(@angular/core@18.0.1)
       rxjs: 7.8.1
-      tslib: 2.6.2
+      tslib: 2.6.3
 
   /@babel/code-frame@7.23.5:
     resolution: {integrity: sha512-CgH3s1a96LipHCmSUmYFPwY7MNx8C3avkq7i4Wl3cfa662ldtUe4VM1TPXX70pfmrlWTb6jLqTYrZyT2ZTJBgA==}
@@ -2287,7 +2291,7 @@ packages:
     dependencies:
       lit: 2.8.0
       ramda: 0.29.1
-      tslib: 2.6.2
+      tslib: 2.6.3
     optionalDependencies:
       '@cds/city': 1.1.0
       modern-normalize: 1.1.0
@@ -2307,7 +2311,7 @@ packages:
       '@angular/core': 18.0.1(rxjs@7.8.1)(zone.js@0.14.6)
       '@cds/core': 6.11.0
       '@clr/ui': 17.2.0(@cds/core@6.11.0)
-      tslib: 2.6.2
+      tslib: 2.6.3
     dev: false
 
   /@clr/ui@17.2.0(@cds/core@6.11.0):
@@ -3085,35 +3089,35 @@ packages:
       '@jridgewell/sourcemap-codec': 1.4.15
     dev: true
 
-  /@jsonjoy.com/base64@1.1.2(tslib@2.6.2):
+  /@jsonjoy.com/base64@1.1.2(tslib@2.6.3):
     resolution: {integrity: sha512-q6XAnWQDIMA3+FTiOYajoYqySkO+JSat0ytXGSuRdq9uXE7o92gzuQwQM14xaCRlBLGq3v5miDGC4vkVTn54xA==}
     engines: {node: '>=10.0'}
     peerDependencies:
       tslib: '2'
     dependencies:
-      tslib: 2.6.2
+      tslib: 2.6.3
     dev: true
 
-  /@jsonjoy.com/json-pack@1.0.4(tslib@2.6.2):
+  /@jsonjoy.com/json-pack@1.0.4(tslib@2.6.3):
     resolution: {integrity: sha512-aOcSN4MeAtFROysrbqG137b7gaDDSmVrl5mpo6sT/w+kcXpWnzhMjmY/Fh/sDx26NBxyIE7MB1seqLeCAzy9Sg==}
     engines: {node: '>=10.0'}
     peerDependencies:
       tslib: '2'
     dependencies:
-      '@jsonjoy.com/base64': 1.1.2(tslib@2.6.2)
-      '@jsonjoy.com/util': 1.1.3(tslib@2.6.2)
+      '@jsonjoy.com/base64': 1.1.2(tslib@2.6.3)
+      '@jsonjoy.com/util': 1.1.3(tslib@2.6.3)
       hyperdyperid: 1.2.0
-      thingies: 1.21.0(tslib@2.6.2)
-      tslib: 2.6.2
+      thingies: 1.21.0(tslib@2.6.3)
+      tslib: 2.6.3
     dev: true
 
-  /@jsonjoy.com/util@1.1.3(tslib@2.6.2):
+  /@jsonjoy.com/util@1.1.3(tslib@2.6.3):
     resolution: {integrity: sha512-g//kkF4kOwUjemValCtOc/xiYzmwMRmWq3Bn+YnzOzuZLHq2PpMOxxIayN3cKbo7Ko2Np65t6D9H81IvXbXhqg==}
     engines: {node: '>=10.0'}
     peerDependencies:
       tslib: '2'
     dependencies:
-      tslib: 2.6.2
+      tslib: 2.6.3
     dev: true
 
   /@leichtgewicht/ip-codec@2.0.4:
@@ -3372,7 +3376,7 @@ packages:
     hasBin: true
     dependencies:
       nx: 19.1.1
-      tslib: 2.6.2
+      tslib: 2.6.3
     transitivePeerDependencies:
       - '@swc-node/register'
       - '@swc/core'
@@ -3392,7 +3396,7 @@ packages:
       nx: 19.1.1
       semver: 7.6.2
       tmp: 0.2.3
-      tslib: 2.6.2
+      tslib: 2.6.3
       yargs-parser: 21.1.1
     dev: true
 
@@ -3737,7 +3741,7 @@ packages:
       '@angular/platform-browser': 18.0.1(@angular/animations@18.0.1)(@angular/common@18.0.1)(@angular/core@18.0.1)
       '@angular/router': 18.0.1(@angular/common@18.0.1)(@angular/core@18.0.1)(@angular/platform-browser@18.0.1)(rxjs@7.8.1)
       '@testing-library/dom': 10.1.0
-      tslib: 2.6.2
+      tslib: 2.6.3
     dev: true
 
   /@testing-library/dom@10.1.0:
@@ -4391,7 +4395,7 @@ packages:
     engines: {node: '>=14.15.0'}
     dependencies:
       js-yaml: 3.14.1
-      tslib: 2.6.2
+      tslib: 2.6.3
     dev: true
 
   /@zkochan/js-yaml@0.0.7:
@@ -4653,7 +4657,7 @@ packages:
     resolution: {integrity: sha512-x1FCFnFifvYDDzTaLII71vG5uvDwgtmDTEVWAxrgeiR8VjMONcCXJx7E+USjDtHlwFmt9MysbqgF9b9Vjr6w+w==}
     engines: {node: '>=4'}
     dependencies:
-      tslib: 2.6.2
+      tslib: 2.6.3
     dev: true
 
   /async@3.2.5:
@@ -7729,7 +7733,7 @@ packages:
     dependencies:
       copy-anything: 2.0.6
       parse-node-version: 1.0.1
-      tslib: 2.6.2
+      tslib: 2.6.3
     optionalDependencies:
       errno: 0.1.8
       graceful-fs: 4.2.11
@@ -7759,8 +7763,6 @@ packages:
       webpack: '*'
     peerDependenciesMeta:
       webpack:
-        optional: true
-      webpack-sources:
         optional: true
     dependencies:
       webpack: 5.91.0(esbuild@0.21.3)
@@ -7977,10 +7979,10 @@ packages:
     resolution: {integrity: sha512-f16coDZlTG1jskq3mxarwB+fGRrd0uXWt+o1WIhRfOwbXQZqUDsTVxQBFK9JjRQHblg8eAG2JSbprDXKjc7ijQ==}
     engines: {node: '>= 4.0.0'}
     dependencies:
-      '@jsonjoy.com/json-pack': 1.0.4(tslib@2.6.2)
-      '@jsonjoy.com/util': 1.1.3(tslib@2.6.2)
-      sonic-forest: 1.0.3(tslib@2.6.2)
-      tslib: 2.6.2
+      '@jsonjoy.com/json-pack': 1.0.4(tslib@2.6.3)
+      '@jsonjoy.com/util': 1.1.3(tslib@2.6.3)
+      sonic-forest: 1.0.3(tslib@2.6.3)
+      tslib: 2.6.3
     dev: true
 
   /merge-descriptors@1.0.1:
@@ -8281,6 +8283,7 @@ packages:
   /node-gyp-build-optional-packages@5.0.7:
     resolution: {integrity: sha512-YlCCc6Wffkx0kHkmam79GKvDQ6x+QZkMjFGrIMxgFNILFvGSbCp2fCBC55pGTT9gVaz8Na5CLmxt/urtzRv36w==}
     hasBin: true
+    requiresBuild: true
     dev: true
     optional: true
 
@@ -8479,7 +8482,7 @@ packages:
       tar-stream: 2.2.0
       tmp: 0.2.3
       tsconfig-paths: 4.2.0
-      tslib: 2.6.2
+      tslib: 2.6.3
       yargs: 17.7.2
       yargs-parser: 21.1.1
     optionalDependencies:
@@ -9380,7 +9383,7 @@ packages:
   /rxjs@7.8.1:
     resolution: {integrity: sha512-AA3TVj+0A2iuIoQkWEK/tqFjBq2j+6PO6Y0zJcvzLAFhEFIO3HL0vls9hWLncZbAAbK0mar7oZ4V079I/qPMxg==}
     dependencies:
-      tslib: 2.6.2
+      tslib: 2.6.3
 
   /safe-buffer@5.1.2:
     resolution: {integrity: sha512-Gd2UZBJDkXlY7GbJxfsE8/nvKkUEU1G38c1siN6QP6a9PT9MmHB8GnpscSmMJSoF8LOIrt8ud/wPtojys4G6+g==}
@@ -9676,14 +9679,14 @@ packages:
       smart-buffer: 4.2.0
     dev: true
 
-  /sonic-forest@1.0.3(tslib@2.6.2):
+  /sonic-forest@1.0.3(tslib@2.6.3):
     resolution: {integrity: sha512-dtwajos6IWMEWXdEbW1IkEkyL2gztCAgDplRIX+OT5aRKnEd5e7r7YCxRgXZdhRP1FBdOBf8axeTPhzDv8T4wQ==}
     engines: {node: '>=10.0'}
     peerDependencies:
       tslib: '2'
     dependencies:
-      tree-dump: 1.0.1(tslib@2.6.2)
-      tslib: 2.6.2
+      tree-dump: 1.0.1(tslib@2.6.3)
+      tslib: 2.6.3
     dev: true
 
   /source-map-js@1.0.2:
@@ -10032,13 +10035,13 @@ packages:
     resolution: {integrity: sha512-N+8UisAXDGk8PFXP4HAzVR9nbfmVJ3zYLAWiTIoqC5v5isinhr+r5uaO8+7r3BMfuNIufIsA7RdpVgacC2cSpw==}
     dev: true
 
-  /thingies@1.21.0(tslib@2.6.2):
+  /thingies@1.21.0(tslib@2.6.3):
     resolution: {integrity: sha512-hsqsJsFMsV+aD4s3CWKk85ep/3I9XzYV/IXaSouJMYIoDlgyi11cBhsqYe9/geRfB0YIikBQg6raRaM+nIMP9g==}
     engines: {node: '>=10.18'}
     peerDependencies:
       tslib: ^2
     dependencies:
-      tslib: 2.6.2
+      tslib: 2.6.3
     dev: true
 
   /through@2.3.8:
@@ -10099,13 +10102,13 @@ packages:
       punycode: 2.3.1
     dev: true
 
-  /tree-dump@1.0.1(tslib@2.6.2):
+  /tree-dump@1.0.1(tslib@2.6.3):
     resolution: {integrity: sha512-WCkcRBVPSlHHq1dc/px9iOfqklvzCbdRwvlNfxGZsrHqf6aZttfPrd7DJTt6oR10dwUfpFFQeVTkPbBIZxX/YA==}
     engines: {node: '>=10.0'}
     peerDependencies:
       tslib: '2'
     dependencies:
-      tslib: 2.6.2
+      tslib: 2.6.3
     dev: true
 
   /tree-kill@1.2.2:
@@ -10177,6 +10180,10 @@ packages:
 
   /tslib@2.6.2:
     resolution: {integrity: sha512-AEYxH93jGFPn/a2iVAwW87VuUIkR1FVUKB77NwMF7nBTDkDrrT/Hpt/IrCJ0QXhW27jTBDcf5ZY7w6RiqTMw2Q==}
+    dev: true
+
+  /tslib@2.6.3:
+    resolution: {integrity: sha512-xNvxJEOUiWPGhUuUdQgAJPKOOJfGnIyKySOc09XkKsgdUV/3E2zvwZYdejjmRgPCgcym1juLH3226yA7sEFJKQ==}
 
   /tuf-js@2.2.0:
     resolution: {integrity: sha512-ZSDngmP1z6zw+FIkIBjvOp/II/mIub/O7Pp12j1WNsiCpg5R5wAc//i555bBQsE44O94btLt0xM/Zr2LQjwdCg==}
@@ -10754,7 +10761,3 @@ packages:
 
   /zone.js@0.14.6:
     resolution: {integrity: sha512-vyRNFqofdaHVdWAy7v3Bzmn84a1JHWSjpuTZROT/uYn8I3p2cmo7Ro9twFmYRQDPhiYOV7QLk0hhY4JJQVqS6Q==}
-
-settings:
-  autoInstallPeers: true
-  excludeLinksFromLockfile: false
