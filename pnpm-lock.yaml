@@ -36,8 +36,8 @@ dependencies:
     specifier: 6.11.0
     version: 6.11.0
   '@clr/angular':
-    specifier: 17.0.1
-    version: 17.0.1(@angular/cdk@17.3.10)(@angular/common@18.0.1)(@angular/core@18.0.1)(@cds/core@6.11.0)(@clr/ui@17.2.0)
+    specifier: 17.2.1
+    version: 17.2.1(@angular/cdk@17.3.10)(@angular/common@18.0.1)(@angular/core@18.0.1)(@cds/core@6.11.0)(@clr/ui@17.2.0)
   '@clr/ui':
     specifier: 17.2.0
     version: 17.2.0(@cds/core@6.11.0)
@@ -66,7 +66,7 @@ devDependencies:
     version: 18.0.1(@typescript-eslint/utils@8.0.0-alpha.20)(eslint@8.57.0)(typescript@5.4.5)
   '@angular-eslint/schematics':
     specifier: 18.0.1
-    version: 18.0.1(@angular-devkit/core@18.0.2)(@angular-devkit/schematics@18.0.2)(@typescript-eslint/utils@8.0.0-alpha.20)(eslint@8.57.0)(typescript@5.4.5)
+    version: 18.0.1(@angular-devkit/core@18.0.5)(@angular-devkit/schematics@18.0.5)(@typescript-eslint/utils@8.0.0-alpha.20)(eslint@8.57.0)(typescript@5.4.5)
   '@angular-eslint/template-parser':
     specifier: 18.0.1
     version: 18.0.1(eslint@8.57.0)(typescript@5.4.5)
@@ -386,19 +386,6 @@ packages:
       - chokidar
     dev: true
 
-  /@angular-devkit/schematics@18.0.2:
-    resolution: {integrity: sha512-G9yGcoB67sH0eRNWoiQWNn2KwiI7sDasVscYPGKf1yo7JRiXmzX/LpfKRPsZTl+Bs0FItnwDInsqgMisK89/6g==}
-    engines: {node: ^18.19.1 || ^20.11.1 || >=22.0.0, npm: ^6.11.0 || ^7.5.6 || >=8.0.0, yarn: '>= 1.13.0'}
-    dependencies:
-      '@angular-devkit/core': 18.0.2
-      jsonc-parser: 3.2.1
-      magic-string: 0.30.10
-      ora: 5.4.1
-      rxjs: 7.8.1
-    transitivePeerDependencies:
-      - chokidar
-    dev: true
-
   /@angular-devkit/schematics@18.0.5:
     resolution: {integrity: sha512-hZwAq3hwuJzCuh7uqO/7T9IMERhYVxz+ganJlEykpyr58o0IjUM1Q4ZSH5UOYlGRPdBCZJbfiafZ0Sg5w5xBww==}
     engines: {node: ^18.19.1 || ^20.11.1 || >=22.0.0, npm: ^6.11.0 || ^7.5.6 || >=8.0.0, yarn: '>= 1.13.0'}
@@ -481,14 +468,14 @@ packages:
       typescript: 5.4.5
     dev: true
 
-  /@angular-eslint/schematics@18.0.1(@angular-devkit/core@18.0.2)(@angular-devkit/schematics@18.0.2)(@typescript-eslint/utils@8.0.0-alpha.20)(eslint@8.57.0)(typescript@5.4.5):
+  /@angular-eslint/schematics@18.0.1(@angular-devkit/core@18.0.5)(@angular-devkit/schematics@18.0.5)(@typescript-eslint/utils@8.0.0-alpha.20)(eslint@8.57.0)(typescript@5.4.5):
     resolution: {integrity: sha512-G9PgFrjyvBaQR8enMnP2scnQDLk99GMpifh3voiOmdEkxaQHRWqhCWncV7GATwpXDzeyj9J9XT9iHGJjnZTpJQ==}
     peerDependencies:
       '@angular-devkit/core': '>= 18.0.0 < 19.0.0'
       '@angular-devkit/schematics': '>= 18.0.0 < 19.0.0'
     dependencies:
-      '@angular-devkit/core': 18.0.2
-      '@angular-devkit/schematics': 18.0.2
+      '@angular-devkit/core': 18.0.5
+      '@angular-devkit/schematics': 18.0.5
       '@angular-eslint/eslint-plugin': 18.0.1(@typescript-eslint/utils@8.0.0-alpha.20)(eslint@8.57.0)(typescript@5.4.5)
       '@angular-eslint/eslint-plugin-template': 18.0.1(@typescript-eslint/utils@8.0.0-alpha.20)(eslint@8.57.0)(typescript@5.4.5)
       '@nx/devkit': 19.1.1(nx@19.1.1)
@@ -2337,14 +2324,14 @@ packages:
       modern-normalize: 1.1.0
     dev: false
 
-  /@clr/angular@17.0.1(@angular/cdk@17.3.10)(@angular/common@18.0.1)(@angular/core@18.0.1)(@cds/core@6.11.0)(@clr/ui@17.2.0):
-    resolution: {integrity: sha512-36zROmGf0r5OArVrEunzKKKRtxSgvQGd6TgmPjSg8OMgyDr2l8jexJHooF0Hx3uXvd84rt0QoYuajMb+emOVNg==}
+  /@clr/angular@17.2.1(@angular/cdk@17.3.10)(@angular/common@18.0.1)(@angular/core@18.0.1)(@cds/core@6.11.0)(@clr/ui@17.2.0):
+    resolution: {integrity: sha512-kiS/8mYoUMBte9tyAncSJIPsbqsWmDvOKRBKq55RzQK4nHO3XypybGXP8YxBpyxcFjDS0QdAl1P/Gm374lXEGA==}
     peerDependencies:
       '@angular/cdk': 15 || 16 || 17
       '@angular/common': 15 || 16 || 17
       '@angular/core': 15 || 16 || 17
       '@cds/core': '>= 6.9.2'
-      '@clr/ui': 17.0.1
+      '@clr/ui': 17.2.1
     dependencies:
       '@angular/cdk': 17.3.10(@angular/common@18.0.1)(@angular/core@18.0.1)(rxjs@7.8.1)
       '@angular/common': 18.0.1(@angular/core@18.0.1)(rxjs@7.8.1)
