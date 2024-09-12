@@ -39,7 +39,7 @@
     "@angular-eslint/template-parser": "18.0.1",
     "@angular/cli": "18.0.5",
     "@angular/compiler-cli": "18.0.1",
-    "@puppeteer/ng-schematics": "0.6.0",
+    "@puppeteer/ng-schematics": "0.7.0",
     "@testing-library/angular": "16.0.0",
     "@types/jest": "29.5.12",
     "@types/node": "20.12.13",
