@@ -9,23 +9,29 @@ jobs:
   test:
     timeout-minutes: 60
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [20.5.1]
     steps:
       - name: Check out code
         uses: actions/checkout@v4
+
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 22
+
       - name: Install Chrome
         run: npx puppeteer browsers install chrome
+
       - name: Install pnpm
         run: npm install -g pnpm
+
       - name: Install dependencies
         run: pnpm install
+
       - name: Create report directory
         run: mkdir -p test-results
+
       - name: Run Puppeteer tests
-        run: pnpm run e2e
+        run: |
+          xvfb-run --auto-servernum --server-args='-screen 0 1280x800x24' \
+          pnpm run e2e -- --no-sandbox --disable-setuid-sandbox
+
