@@ -10,26 +10,20 @@ jobs:
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
-      - name: Check out code
-        uses: actions/checkout@v4
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: 22
-
-      - name: Install Chrome
-        run: npx puppeteer browsers install chrome
-
-      - name: Install pnpm
-        run: npm install -g pnpm
-
-      - name: Install dependencies
-        run: pnpm install
-
-      - name: Create report directory
-        run: mkdir -p test-results
-
+      - run: npm install -g pnpm
+      - run: npx puppeteer browsers install chrome
+      - run: pnpm install
+      - run: mkdir -p test-results
       - name: Run Puppeteer tests
-        run: pnpm run e2e
+        run: |
+          if pnpm run e2e; then
+            echo "E2E tests passed with sandbox."
+          else
+            echo "E2E tests failed with sandbox. Retrying without sandbox..."
+            pnpm run e2e -- --no-sandbox --disable-setuid-sandbox
+          fi
 
