@@ -5,13 +5,14 @@ on: [push, pull_request]
 jobs:
   test:
     runs-on: ubuntu-latest
-    container: cypress/browsers:node20.11.0-chrome119-ff118
+    container: cypress/browsers:node22.14.0-chrome133-ff135 # Node 22
     steps:
       - uses: actions/checkout@v4
       - run: npm i -g pnpm
       - run: pnpm install
-      - name: Install correct Chrome version
-        run: npx puppeteer-core browsers install chrome@119.0.6045.105
+      - name: Install Chrome
+        run: npx puppeteer-core browsers install chrome@133.0.6696.123  # Version matching Docker image
       - name: Run Puppeteer tests
         run: pnpm run e2e
+
 
