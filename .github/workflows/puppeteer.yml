@@ -4,41 +4,26 @@ on:
     branches: [main]
   pull_request:
     branches: [main]
+
 jobs:
   test:
     timeout-minutes: 60
     runs-on: ubuntu-latest
-
     strategy:
       matrix:
         node-version: [20.5.1]
-
     steps:
       - name: Check out code
         uses: actions/checkout@v4
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: ${{ matrix.node-version }}
-
-      - name: Install system dependencies
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y libgbm-dev libasound2 libatk-bridge2.0-0 libatk1.0-0 libc6 libcairo2 libcups2 libdbus-1-3 libexpat1 libfontconfig1 libgcc1 libglib2.0-0 libgtk-3-0 libnspr4 libpango-1.0-0 libpangocairo-1.0-0 libstdc++6 libx11-6 libx11-xcb1 libxcb1 libxcomposite1 libxcursor1 libxdamage1 libxext6 libxfixes3 libxi6 libxrandr2 libxrender1 libxss1 libxtst6 ca-certificates fonts-liberation libappindicator1 libnss3 lsb-release xdg-utils
-
+          node-version: 22
       - name: Install pnpm
         run: npm install -g pnpm
-
       - name: Install dependencies
         run: pnpm install
-
       - name: Create report directory
         run: mkdir -p test-results
-
-      - name: Install Chrome
-        run: npx puppeteer browsers install chrome
-
       - name: Run Puppeteer tests
-        env:
-          PUPPETEER_SKIP_CHROMIUM_DOWNLOAD: true
-        run: xvfb-run --auto-servernum --server-args="-screen 0 1280x960x24" -- pnpm run e2e
+        run: pnpm run e2e
