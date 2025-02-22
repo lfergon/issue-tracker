@@ -33,4 +33,7 @@ jobs:
         run: npx puppeteer browsers install chrome
 
       - name: Run Puppeteer tests
+        env:
+          PUPPETEER_SKIP_CHROMIUM_DOWNLOAD: true
+          PUPPETEER_ARGS: '--no-sandbox --disable-setuid-sandbox'
         run: pnpm run e2e
