@@ -11,7 +11,8 @@ jobs:
       - run: npm i -g pnpm
       - run: pnpm install
       - name: Install Chrome
-        run: npx @puppeteer/browsers install chrome@stable  # Version matching Docker image
+        run: npx @puppeteer/browsers install chrome@133.0.6943.98
+        # Version matching Docker image
       - name: Run Puppeteer tests
         run: pnpm run e2e
 
