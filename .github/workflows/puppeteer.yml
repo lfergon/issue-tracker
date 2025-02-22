@@ -5,7 +5,7 @@ on: [push, pull_request]
 jobs:
   test:
     runs-on: ubuntu-latest
-    container: cypress/browsers:node22.14.0-chrome133-ff135 # Node 22
+    container: cypress/browsers:latest
     steps:
       - uses: actions/checkout@v4
       - run: npm i -g pnpm
