@@ -11,9 +11,10 @@ interface IssueForm {
 }
 
 @Component({
-  selector: 'app-issue-report',
-  templateUrl: './issue-report.component.html',
-  styleUrls: ['./issue-report.component.css'],
+    selector: 'app-issue-report',
+    templateUrl: './issue-report.component.html',
+    styleUrls: ['./issue-report.component.css'],
+    standalone: false
 })
 export class IssueReportComponent implements OnInit {
   @Output() formClose = new EventEmitter();

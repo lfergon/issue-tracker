@@ -4,9 +4,10 @@ import { Issue } from '../issue';
 import { issues } from '../../assets/mock-issues';
 
 @Component({
-  selector: 'app-issue-list',
-  templateUrl: './issue-list.component.html',
-  styleUrls: ['./issue-list.component.css'],
+    selector: 'app-issue-list',
+    templateUrl: './issue-list.component.html',
+    styleUrls: ['./issue-list.component.css'],
+    standalone: false
 })
 export class IssueListComponent implements OnInit {
   showReportIssue = false;
