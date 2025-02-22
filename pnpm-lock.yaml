@@ -39,11 +39,11 @@ importers:
         specifier: 6.14.0
         version: 6.14.0
       '@clr/angular':
-        specifier: 17.4.0
-        version: 17.4.0(@angular/cdk@18.2.14(@angular/common@19.1.7(@angular/core@19.1.7(rxjs@7.8.1)(zone.js@0.15.0))(rxjs@7.8.1))(@angular/core@19.1.7(rxjs@7.8.1)(zone.js@0.15.0))(rxjs@7.8.1))(@angular/common@19.1.7(@angular/core@19.1.7(rxjs@7.8.1)(zone.js@0.15.0))(rxjs@7.8.1))(@angular/core@19.1.7(rxjs@7.8.1)(zone.js@0.15.0))(@cds/core@6.14.0)(@clr/ui@17.4.0(@cds/core@6.14.0))
+        specifier: 17.6.0
+        version: 17.6.0(@angular/cdk@18.2.14(@angular/common@19.1.7(@angular/core@19.1.7(rxjs@7.8.1)(zone.js@0.15.0))(rxjs@7.8.1))(@angular/core@19.1.7(rxjs@7.8.1)(zone.js@0.15.0))(rxjs@7.8.1))(@angular/common@19.1.7(@angular/core@19.1.7(rxjs@7.8.1)(zone.js@0.15.0))(rxjs@7.8.1))(@angular/core@19.1.7(rxjs@7.8.1)(zone.js@0.15.0))(@cds/core@6.14.0)(@clr/ui@17.6.0(@cds/core@6.14.0))
       '@clr/ui':
-        specifier: 17.4.0
-        version: 17.4.0(@cds/core@6.14.0)
+        specifier: 17.6.0
+        version: 17.6.0(@cds/core@6.14.0)
       rxjs:
         specifier: 7.8.1
         version: 7.8.1
@@ -84,6 +84,9 @@ importers:
       '@testing-library/angular':
         specifier: 17.3.6
         version: 17.3.6(@angular/common@19.1.7(@angular/core@19.1.7(rxjs@7.8.1)(zone.js@0.15.0))(rxjs@7.8.1))(@angular/core@19.1.7(rxjs@7.8.1)(zone.js@0.15.0))(@angular/platform-browser@19.1.7(@angular/animations@19.1.7(@angular/core@19.1.7(rxjs@7.8.1)(zone.js@0.15.0)))(@angular/common@19.1.7(@angular/core@19.1.7(rxjs@7.8.1)(zone.js@0.15.0))(rxjs@7.8.1))(@angular/core@19.1.7(rxjs@7.8.1)(zone.js@0.15.0)))(@angular/router@19.1.7(@angular/common@19.1.7(@angular/core@19.1.7(rxjs@7.8.1)(zone.js@0.15.0))(rxjs@7.8.1))(@angular/core@19.1.7(rxjs@7.8.1)(zone.js@0.15.0))(@angular/platform-browser@19.1.7(@angular/animations@19.1.7(@angular/core@19.1.7(rxjs@7.8.1)(zone.js@0.15.0)))(@angular/common@19.1.7(@angular/core@19.1.7(rxjs@7.8.1)(zone.js@0.15.0))(rxjs@7.8.1))(@angular/core@19.1.7(rxjs@7.8.1)(zone.js@0.15.0)))(rxjs@7.8.1))(@testing-library/dom@10.1.0)
+      '@testing-library/dom':
+        specifier: ^10.0.0
+        version: 10.1.0
       '@types/jest':
         specifier: 29.5.12
         version: 29.5.12
@@ -377,10 +380,6 @@ packages:
     resolution: {integrity: sha512-ZJhac6FkEd1yhG2AHOmfcXG4ceoLltoCVJjN5XsWN9BifBQr+cHJbWi0h68HZuSORq+3WtJ2z0hwF2NG1b5kcA==}
     engines: {node: '>=6.9.0'}
 
-  '@babel/code-frame@7.24.7':
-    resolution: {integrity: sha512-BcYH1CVJBO9tvyIZ2jVeXgSIMvGZ2FDRvDdOIVQyuklNKSsx+eppDEBq/g47Ayw+RqNFE+URvOShmf+f/qwAlA==}
-    engines: {node: '>=6.9.0'}
-
   '@babel/code-frame@7.26.2':
     resolution: {integrity: sha512-RJlIHRueQgwWitWgF8OdFYGZX328Ax5BCemNGlqHfplnRT9ESi8JkFlvaVYbS+UubVY6dpv87Fs2u5M29iNFVQ==}
     engines: {node: '>=6.9.0'}
@@ -574,10 +573,6 @@ packages:
 
   '@babel/highlight@7.24.6':
     resolution: {integrity: sha512-2YnuOp4HAk2BsBrJJvYCbItHx0zWscI1C3zgWkz+wDyD9I7GIVrfnLyrR4Y1VR+7p+chAEcrgRQYZAGIKMV7vQ==}
-    engines: {node: '>=6.9.0'}
-
-  '@babel/highlight@7.24.7':
-    resolution: {integrity: sha512-EStJpq4OuY8xYfhGVXngigBJRWxftKX9ksiGDnmlY3o7B/V7KIAc9X4oiK87uPJSc/vs5L869bem5fhZa8caZw==}
     engines: {node: '>=6.9.0'}
 
   '@babel/parser@7.24.6':
@@ -1042,10 +1037,6 @@ packages:
   '@babel/regjsgen@0.8.0':
     resolution: {integrity: sha512-x/rqGMdzj+fWZvCOYForTghzbtqPDZ5gPwaoNGHdgDfF2QA/XZbCBp4Moo5scrkAMPhB7z26XM/AaHuIJdgauA==}
 
-  '@babel/runtime@7.25.0':
-    resolution: {integrity: sha512-7dRy4DwXwtzBrPbZflqxnvfxLF8kdZXPkhymtDeFoFqE6ldzjQFgYTtYIFARcLEYDrqfBfYcZt1WqFxRoyC9Rw==}
-    engines: {node: '>=6.9.0'}
-
   '@babel/runtime@7.26.0':
     resolution: {integrity: sha512-FDSOghenHTiToteC/QRlv2q3DhPZ/oOXTBoirfWNx1Cx3TMVcGWQtMMmQcSvb/JjpNeGzx8Pq/b4fKEJuWm1sw==}
     engines: {node: '>=6.9.0'}
@@ -1087,17 +1078,17 @@ packages:
   '@cds/core@6.14.0':
     resolution: {integrity: sha512-nnRxO7gXnKchFOYb4QZ7X6gUsfxgeESjr2FXwe8dcdZ/ZTL0hFVket9oA9T4j4dB9xuSwEDFE4HrVLnSArbLjw==}
 
-  '@clr/angular@17.4.0':
-    resolution: {integrity: sha512-K0DgVN3eQX5hur8wwMX/jBjpxVXRB0mjfRI2FcmPIzGsx30xxP5FgefwFLWel6qHgtkZnJg6cHXCILcuORuxpQ==}
+  '@clr/angular@17.6.0':
+    resolution: {integrity: sha512-QC7CdGUdYPnEJoTvKlJ3Y8IXXSdRswS6AkLBDMCtoHCLU0eeyVJ9q/s5p9y2ow+v1VZfKJ6EWSh75NHNjJsrsA==}
     peerDependencies:
-      '@angular/cdk': 15 || 16 || 17 || 18
-      '@angular/common': 15 || 16 || 17 || 18
-      '@angular/core': 15 || 16 || 17 || 18
+      '@angular/cdk': 15 || 16 || 17 || 18 || 19
+      '@angular/common': 15 || 16 || 17 || 18 || 19
+      '@angular/core': 15 || 16 || 17 || 18 || 19
       '@cds/core': '>= 6.9.2'
-      '@clr/ui': 17.4.0
+      '@clr/ui': 17.6.0
 
-  '@clr/ui@17.4.0':
-    resolution: {integrity: sha512-C2Yq7hkxYmeAF+Utjw1xq9sCOS6y0vpSgfZQbN5kgOGcOJaLjj4TToNUtcrVAI2j7Yx3nvEVO7tbE9M+Xoo1RA==}
+  '@clr/ui@17.6.0':
+    resolution: {integrity: sha512-jePHq15FwiOFVC/KcghgQapEUbV5pTnAQFpBTzikbd0vAYSvqYVOHjsYNzeL0AXDDb8vpS74SH2bhtj75fZOfw==}
     peerDependencies:
       '@cds/core': ^6.9.2
 
@@ -6319,16 +6310,11 @@ snapshots:
       '@babel/highlight': 7.24.6
       picocolors: 1.0.0
 
-  '@babel/code-frame@7.24.7':
-    dependencies:
-      '@babel/highlight': 7.24.7
-      picocolors: 1.0.1
-
   '@babel/code-frame@7.26.2':
     dependencies:
       '@babel/helper-validator-identifier': 7.25.9
       js-tokens: 4.0.0
-      picocolors: 1.0.1
+      picocolors: 1.1.1
 
   '@babel/compat-data@7.24.6': {}
 
@@ -6589,13 +6575,6 @@ snapshots:
       chalk: 2.4.2
       js-tokens: 4.0.0
       picocolors: 1.0.0
-
-  '@babel/highlight@7.24.7':
-    dependencies:
-      '@babel/helper-validator-identifier': 7.24.7
-      chalk: 2.4.2
-      js-tokens: 4.0.0
-      picocolors: 1.0.1
 
   '@babel/parser@7.24.6':
     dependencies:
@@ -7149,17 +7128,13 @@ snapshots:
 
   '@babel/regjsgen@0.8.0': {}
 
-  '@babel/runtime@7.25.0':
-    dependencies:
-      regenerator-runtime: 0.14.1
-
   '@babel/runtime@7.26.0':
     dependencies:
       regenerator-runtime: 0.14.1
 
   '@babel/template@7.24.6':
     dependencies:
-      '@babel/code-frame': 7.24.6
+      '@babel/code-frame': 7.26.2
       '@babel/parser': 7.24.6
       '@babel/types': 7.24.6
 
@@ -7171,7 +7146,7 @@ snapshots:
 
   '@babel/traverse@7.24.6':
     dependencies:
-      '@babel/code-frame': 7.24.6
+      '@babel/code-frame': 7.26.2
       '@babel/generator': 7.24.6
       '@babel/helper-environment-visitor': 7.24.6
       '@babel/helper-function-name': 7.24.6
@@ -7227,16 +7202,16 @@ snapshots:
       '@cds/city': 1.1.0
       modern-normalize: 1.1.0
 
-  '@clr/angular@17.4.0(@angular/cdk@18.2.14(@angular/common@19.1.7(@angular/core@19.1.7(rxjs@7.8.1)(zone.js@0.15.0))(rxjs@7.8.1))(@angular/core@19.1.7(rxjs@7.8.1)(zone.js@0.15.0))(rxjs@7.8.1))(@angular/common@19.1.7(@angular/core@19.1.7(rxjs@7.8.1)(zone.js@0.15.0))(rxjs@7.8.1))(@angular/core@19.1.7(rxjs@7.8.1)(zone.js@0.15.0))(@cds/core@6.14.0)(@clr/ui@17.4.0(@cds/core@6.14.0))':
+  '@clr/angular@17.6.0(@angular/cdk@18.2.14(@angular/common@19.1.7(@angular/core@19.1.7(rxjs@7.8.1)(zone.js@0.15.0))(rxjs@7.8.1))(@angular/core@19.1.7(rxjs@7.8.1)(zone.js@0.15.0))(rxjs@7.8.1))(@angular/common@19.1.7(@angular/core@19.1.7(rxjs@7.8.1)(zone.js@0.15.0))(rxjs@7.8.1))(@angular/core@19.1.7(rxjs@7.8.1)(zone.js@0.15.0))(@cds/core@6.14.0)(@clr/ui@17.6.0(@cds/core@6.14.0))':
     dependencies:
       '@angular/cdk': 18.2.14(@angular/common@19.1.7(@angular/core@19.1.7(rxjs@7.8.1)(zone.js@0.15.0))(rxjs@7.8.1))(@angular/core@19.1.7(rxjs@7.8.1)(zone.js@0.15.0))(rxjs@7.8.1)
       '@angular/common': 19.1.7(@angular/core@19.1.7(rxjs@7.8.1)(zone.js@0.15.0))(rxjs@7.8.1)
       '@angular/core': 19.1.7(rxjs@7.8.1)(zone.js@0.15.0)
       '@cds/core': 6.14.0
-      '@clr/ui': 17.4.0(@cds/core@6.14.0)
+      '@clr/ui': 17.6.0(@cds/core@6.14.0)
       tslib: 2.6.3
 
-  '@clr/ui@17.4.0(@cds/core@6.14.0)':
+  '@clr/ui@17.6.0(@cds/core@6.14.0)':
     dependencies:
       '@cds/core': 6.14.0
 
@@ -8178,8 +8153,8 @@ snapshots:
 
   '@testing-library/dom@10.1.0':
     dependencies:
-      '@babel/code-frame': 7.24.7
-      '@babel/runtime': 7.25.0
+      '@babel/code-frame': 7.26.2
+      '@babel/runtime': 7.26.0
       '@types/aria-query': 5.0.4
       aria-query: 5.3.0
       chalk: 4.1.2
@@ -12173,7 +12148,7 @@ snapshots:
     dependencies:
       browserslist: 4.23.0
       escalade: 3.1.2
-      picocolors: 1.0.0
+      picocolors: 1.1.1
 
   update-browserslist-db@1.1.0(browserslist@4.23.3):
     dependencies:
