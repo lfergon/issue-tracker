@@ -1,24 +1,13 @@
 name: Puppeteer Tests
-on: [push, pull_request]  # Simplified trigger
+on: [push, pull_request]
 
 jobs:
   test:
     runs-on: ubuntu-latest
+    container: cypress/browsers:node20.11.0-chrome119-ff118
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 22
       - run: npm i -g pnpm
-      - run: npx puppeteer browsers install chrome
       - run: pnpm install
       - name: Run Puppeteer tests
-        run: |
-          if xvfb-run --auto-servernum pnpm run e2e; then # Try with sandbox + xvfb
-            echo "E2E tests passed with sandbox and xvfb-run."
-          elif xvfb-run --auto-servernum pnpm run e2e -- --no-sandbox --disable-setuid-sandbox; then # Try no-sandbox + xvfb
-            echo "E2E tests passed without sandbox, using xvfb-run."
-          else # Fail if neither works
-            echo "E2E tests failed in both sandboxed and non-sandboxed modes."
-            exit 1
-          fi
+        run: pnpm run e2e
