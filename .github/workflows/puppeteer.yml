@@ -19,6 +19,8 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 22
+      - name: Install Chrome
+        run: npx puppeteer browsers install chrome
       - name: Install pnpm
         run: npm install -g pnpm
       - name: Install dependencies
