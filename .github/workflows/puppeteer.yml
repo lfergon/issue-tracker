@@ -31,7 +31,5 @@ jobs:
         run: mkdir -p test-results
 
       - name: Run Puppeteer tests
-        run: |
-          xvfb-run --auto-servernum --server-args='-screen 0 1280x800x24' \
-          pnpm run e2e -- --no-sandbox --disable-setuid-sandbox
+        run: pnpm run e2e
 
