@@ -40,10 +40,10 @@ importers:
         version: 6.15.1
       '@clr/angular':
         specifier: 17.10.0
-        version: 17.10.0(@angular/cdk@19.1.5(@angular/common@19.1.7(@angular/core@19.1.7(rxjs@7.8.1)(zone.js@0.15.0))(rxjs@7.8.1))(@angular/core@19.1.7(rxjs@7.8.1)(zone.js@0.15.0))(rxjs@7.8.1))(@angular/common@19.1.7(@angular/core@19.1.7(rxjs@7.8.1)(zone.js@0.15.0))(rxjs@7.8.1))(@angular/core@19.1.7(rxjs@7.8.1)(zone.js@0.15.0))(@cds/core@6.15.1)(@clr/ui@17.6.0(@cds/core@6.15.1))
+        version: 17.10.0(@angular/cdk@19.1.5(@angular/common@19.1.7(@angular/core@19.1.7(rxjs@7.8.1)(zone.js@0.15.0))(rxjs@7.8.1))(@angular/core@19.1.7(rxjs@7.8.1)(zone.js@0.15.0))(rxjs@7.8.1))(@angular/common@19.1.7(@angular/core@19.1.7(rxjs@7.8.1)(zone.js@0.15.0))(rxjs@7.8.1))(@angular/core@19.1.7(rxjs@7.8.1)(zone.js@0.15.0))(@cds/core@6.15.1)(@clr/ui@17.10.0(@cds/core@6.15.1))
       '@clr/ui':
-        specifier: 17.6.0
-        version: 17.6.0(@cds/core@6.15.1)
+        specifier: 17.10.0
+        version: 17.10.0(@cds/core@6.15.1)
       rxjs:
         specifier: 7.8.1
         version: 7.8.1
@@ -1090,8 +1090,8 @@ packages:
       '@cds/core': '>= 6.9.2'
       '@clr/ui': 17.10.0
 
-  '@clr/ui@17.6.0':
-    resolution: {integrity: sha512-jePHq15FwiOFVC/KcghgQapEUbV5pTnAQFpBTzikbd0vAYSvqYVOHjsYNzeL0AXDDb8vpS74SH2bhtj75fZOfw==}
+  '@clr/ui@17.10.0':
+    resolution: {integrity: sha512-5ExEu6XaoKTuvJogBQjDLdRbikT075mpwT+J09N26Z8iNeaKSDUMe5rfBJJUTK7OtqZ5X9T5gXr2EN+6TEONGw==}
     peerDependencies:
       '@cds/core': ^6.9.2
 
@@ -7230,16 +7230,16 @@ snapshots:
       '@cds/city': 1.1.0
       modern-normalize: 1.1.0
 
-  '@clr/angular@17.10.0(@angular/cdk@19.1.5(@angular/common@19.1.7(@angular/core@19.1.7(rxjs@7.8.1)(zone.js@0.15.0))(rxjs@7.8.1))(@angular/core@19.1.7(rxjs@7.8.1)(zone.js@0.15.0))(rxjs@7.8.1))(@angular/common@19.1.7(@angular/core@19.1.7(rxjs@7.8.1)(zone.js@0.15.0))(rxjs@7.8.1))(@angular/core@19.1.7(rxjs@7.8.1)(zone.js@0.15.0))(@cds/core@6.15.1)(@clr/ui@17.6.0(@cds/core@6.15.1))':
+  '@clr/angular@17.10.0(@angular/cdk@19.1.5(@angular/common@19.1.7(@angular/core@19.1.7(rxjs@7.8.1)(zone.js@0.15.0))(rxjs@7.8.1))(@angular/core@19.1.7(rxjs@7.8.1)(zone.js@0.15.0))(rxjs@7.8.1))(@angular/common@19.1.7(@angular/core@19.1.7(rxjs@7.8.1)(zone.js@0.15.0))(rxjs@7.8.1))(@angular/core@19.1.7(rxjs@7.8.1)(zone.js@0.15.0))(@cds/core@6.15.1)(@clr/ui@17.10.0(@cds/core@6.15.1))':
     dependencies:
       '@angular/cdk': 19.1.5(@angular/common@19.1.7(@angular/core@19.1.7(rxjs@7.8.1)(zone.js@0.15.0))(rxjs@7.8.1))(@angular/core@19.1.7(rxjs@7.8.1)(zone.js@0.15.0))(rxjs@7.8.1)
       '@angular/common': 19.1.7(@angular/core@19.1.7(rxjs@7.8.1)(zone.js@0.15.0))(rxjs@7.8.1)
       '@angular/core': 19.1.7(rxjs@7.8.1)(zone.js@0.15.0)
       '@cds/core': 6.15.1
-      '@clr/ui': 17.6.0(@cds/core@6.15.1)
+      '@clr/ui': 17.10.0(@cds/core@6.15.1)
       tslib: 2.6.3
 
-  '@clr/ui@17.6.0(@cds/core@6.15.1)':
+  '@clr/ui@17.10.0(@cds/core@6.15.1)':
     dependencies:
       '@cds/core': 6.15.1
 
