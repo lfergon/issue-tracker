@@ -6,7 +6,20 @@ let page: puppeteer.Page;
 
 export function setupBrowserHooks(path = ''): void {
   beforeAll(async () => {
-    browser = await puppeteer.launch();
+    const isCI = process.env.CI === 'true';
+    browser = await puppeteer.launch({
+      headless: isCI ? 'new' : false,
+      args: isCI ? [
+        '--no-sandbox',
+        '--disable-setuid-sandbox',
+        '--disable-dev-shm-usage',
+        '--disable-accelerated-2d-canvas',
+        '--no-first-run',
+        '--no-zygote',
+        '--single-process',
+        '--disable-gpu'
+      ] : []
+    });
   });
 
   beforeEach(async () => {
