@@ -39,8 +39,8 @@ importers:
         specifier: 6.15.1
         version: 6.15.1
       '@clr/angular':
-        specifier: 17.6.0
-        version: 17.6.0(@angular/cdk@19.1.5(@angular/common@19.1.7(@angular/core@19.1.7(rxjs@7.8.1)(zone.js@0.15.0))(rxjs@7.8.1))(@angular/core@19.1.7(rxjs@7.8.1)(zone.js@0.15.0))(rxjs@7.8.1))(@angular/common@19.1.7(@angular/core@19.1.7(rxjs@7.8.1)(zone.js@0.15.0))(rxjs@7.8.1))(@angular/core@19.1.7(rxjs@7.8.1)(zone.js@0.15.0))(@cds/core@6.15.1)(@clr/ui@17.6.0(@cds/core@6.15.1))
+        specifier: 17.10.0
+        version: 17.10.0(@angular/cdk@19.1.5(@angular/common@19.1.7(@angular/core@19.1.7(rxjs@7.8.1)(zone.js@0.15.0))(rxjs@7.8.1))(@angular/core@19.1.7(rxjs@7.8.1)(zone.js@0.15.0))(rxjs@7.8.1))(@angular/common@19.1.7(@angular/core@19.1.7(rxjs@7.8.1)(zone.js@0.15.0))(rxjs@7.8.1))(@angular/core@19.1.7(rxjs@7.8.1)(zone.js@0.15.0))(@cds/core@6.15.1)(@clr/ui@17.6.0(@cds/core@6.15.1))
       '@clr/ui':
         specifier: 17.6.0
         version: 17.6.0(@cds/core@6.15.1)
@@ -1081,14 +1081,14 @@ packages:
   '@cds/core@6.15.1':
     resolution: {integrity: sha512-XFIDynH2ye2HQglcCssdz2gZEaQC5WHENZyTwmkbjUvEGLpqiIHyIUX12U6y17lVMHO+yYzPc6YFZ7aW4bF5gQ==}
 
-  '@clr/angular@17.6.0':
-    resolution: {integrity: sha512-QC7CdGUdYPnEJoTvKlJ3Y8IXXSdRswS6AkLBDMCtoHCLU0eeyVJ9q/s5p9y2ow+v1VZfKJ6EWSh75NHNjJsrsA==}
+  '@clr/angular@17.10.0':
+    resolution: {integrity: sha512-Rq/63XAmsReCqCQ1vbQIXQh5RgCJEmxLZtdWmtayMkI2QEjLn6KDIzYxZc5ORK9pMaMt+AAn3ijbWMm1qxtXJw==}
     peerDependencies:
       '@angular/cdk': 15 || 16 || 17 || 18 || 19
       '@angular/common': 15 || 16 || 17 || 18 || 19
       '@angular/core': 15 || 16 || 17 || 18 || 19
       '@cds/core': '>= 6.9.2'
-      '@clr/ui': 17.6.0
+      '@clr/ui': 17.10.0
 
   '@clr/ui@17.6.0':
     resolution: {integrity: sha512-jePHq15FwiOFVC/KcghgQapEUbV5pTnAQFpBTzikbd0vAYSvqYVOHjsYNzeL0AXDDb8vpS74SH2bhtj75fZOfw==}
@@ -7230,7 +7230,7 @@ snapshots:
       '@cds/city': 1.1.0
       modern-normalize: 1.1.0
 
-  '@clr/angular@17.6.0(@angular/cdk@19.1.5(@angular/common@19.1.7(@angular/core@19.1.7(rxjs@7.8.1)(zone.js@0.15.0))(rxjs@7.8.1))(@angular/core@19.1.7(rxjs@7.8.1)(zone.js@0.15.0))(rxjs@7.8.1))(@angular/common@19.1.7(@angular/core@19.1.7(rxjs@7.8.1)(zone.js@0.15.0))(rxjs@7.8.1))(@angular/core@19.1.7(rxjs@7.8.1)(zone.js@0.15.0))(@cds/core@6.15.1)(@clr/ui@17.6.0(@cds/core@6.15.1))':
+  '@clr/angular@17.10.0(@angular/cdk@19.1.5(@angular/common@19.1.7(@angular/core@19.1.7(rxjs@7.8.1)(zone.js@0.15.0))(rxjs@7.8.1))(@angular/core@19.1.7(rxjs@7.8.1)(zone.js@0.15.0))(rxjs@7.8.1))(@angular/common@19.1.7(@angular/core@19.1.7(rxjs@7.8.1)(zone.js@0.15.0))(rxjs@7.8.1))(@angular/core@19.1.7(rxjs@7.8.1)(zone.js@0.15.0))(@cds/core@6.15.1)(@clr/ui@17.6.0(@cds/core@6.15.1))':
     dependencies:
       '@angular/cdk': 19.1.5(@angular/common@19.1.7(@angular/core@19.1.7(rxjs@7.8.1)(zone.js@0.15.0))(rxjs@7.8.1))(@angular/core@19.1.7(rxjs@7.8.1)(zone.js@0.15.0))(rxjs@7.8.1)
       '@angular/common': 19.1.7(@angular/core@19.1.7(rxjs@7.8.1)(zone.js@0.15.0))(rxjs@7.8.1)
@@ -8503,7 +8503,7 @@ snapshots:
       globby: 11.1.0
       is-glob: 4.0.3
       minimatch: 9.0.5
-      semver: 7.7.1
+      semver: 7.7.2
       ts-api-utils: 1.4.3(typescript@5.7.3)
     optionalDependencies:
       typescript: 5.7.3
@@ -8708,7 +8708,7 @@ snapshots:
 
   acorn-globals@7.0.1:
     dependencies:
-      acorn: 8.14.0
+      acorn: 8.15.0
       acorn-walk: 8.3.2
 
   acorn-jsx@5.3.2(acorn@8.15.0):
@@ -10635,7 +10635,7 @@ snapshots:
   jsdom@20.0.3:
     dependencies:
       abab: 2.0.6
-      acorn: 8.14.0
+      acorn: 8.15.0
       acorn-globals: 7.0.1
       cssom: 0.5.0
       cssstyle: 2.3.0
