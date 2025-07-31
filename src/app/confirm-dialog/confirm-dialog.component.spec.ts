@@ -5,6 +5,7 @@ import { By } from '@angular/platform-browser';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { InteractivityChecker } from '@angular/cdk/a11y';
 import { FormsModule } from '@angular/forms';
+import { setComponentInput } from '../../test-utils/component-test-helpers';
 
 window.ResizeObserver =
   window.ResizeObserver ||
@@ -66,7 +67,7 @@ describe('ConfirmDialogComponent', () => {
 
   it('should close modal when click Cancel', () => {
     jest.spyOn(component, 'disagree');
-    fixture.componentRef.setInput('issueNumber', 123);
+    setComponentInput(fixture, 'issueNumber', 123);
     fixture.detectChanges();
     const cancelButton = fixture.debugElement.query(By.css('.btn-outline'));
     cancelButton.triggerEventHandler('click', null);
@@ -75,7 +76,7 @@ describe('ConfirmDialogComponent', () => {
 
   it('should emit event when click Yes, continue', () => {
     jest.spyOn(component, 'agree');
-    fixture.componentRef.setInput('issueNumber', 123);
+    setComponentInput(fixture, 'issueNumber', 123);
     fixture.detectChanges();
     const agreeButton = fixture.debugElement.query(By.css('.btn-danger'));
     agreeButton.triggerEventHandler('click', null);

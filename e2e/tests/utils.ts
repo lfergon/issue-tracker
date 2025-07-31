@@ -6,9 +6,9 @@ let page: puppeteer.Page;
 
 export function setupBrowserHooks(path = ''): void {
   beforeAll(async () => {
-    const isCI = process.env.CI === 'true';
+    const isCI = process.env['CI'] === 'true';
     browser = await puppeteer.launch({
-      headless: isCI ? 'new' : false,
+      headless: isCI ? true : false,
       args: isCI ? [
         '--no-sandbox',
         '--disable-setuid-sandbox',
