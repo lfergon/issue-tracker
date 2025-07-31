@@ -1,6 +1,5 @@
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppComponent } from './app.component';
 import { ClarityModule } from '@clr/angular';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -10,20 +9,18 @@ import { IssueReportComponent } from './issue-report/issue-report.component';
 import { ConfirmDialogComponent } from './confirm-dialog/confirm-dialog.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    IssueListComponent,
-    IssueReportComponent,
-    ConfirmDialogComponent,
-  ],
+  declarations: [],
   imports: [
     BrowserModule,
     ClarityModule,
     BrowserAnimationsModule,
     ReactiveFormsModule,
+    IssueReportComponent,
+    AppComponent,
+    IssueListComponent,
+    ConfirmDialogComponent,
   ],
   providers: [],
-  bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class AppModule {}

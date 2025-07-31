@@ -1,7 +1,20 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { Component, OnInit, inject, output } from '@angular/core';
+import {
+  FormControl,
+  FormGroup,
+  Validators,
+  ReactiveFormsModule,
+} from '@angular/forms';
 import { IssuesService } from '../issues.service';
 import { Issue } from '../issue';
+import {
+  ClrInputModule,
+  ClrRadioModule,
+  ClrSelectModule,
+  ClrStackViewModule,
+  ClrTextareaModule,
+} from '@clr/angular';
+import { CommonModule } from '@angular/common';
 
 interface IssueForm {
   title: FormControl<string>;
@@ -11,13 +24,21 @@ interface IssueForm {
 }
 
 @Component({
-    selector: 'app-issue-report',
-    templateUrl: './issue-report.component.html',
-    styleUrls: ['./issue-report.component.css'],
-    standalone: false
+  selector: 'app-issue-report',
+  templateUrl: './issue-report.component.html',
+  styleUrls: ['./issue-report.component.css'],
+  imports: [
+    ClrInputModule,
+    ReactiveFormsModule,
+    ClrStackViewModule,
+    ClrTextareaModule,
+    ClrRadioModule,
+    ClrSelectModule,
+    CommonModule,
+  ],
 })
 export class IssueReportComponent implements OnInit {
-  @Output() formClose = new EventEmitter();
+  readonly formClose = output();
 
   suggestions: Issue[] = [];
 
@@ -37,7 +58,7 @@ export class IssueReportComponent implements OnInit {
     }),
   });
 
-  constructor(private issuesService: IssuesService) {}
+  private issuesService = inject(IssuesService);
 
   addIssue(): void {
     if (this.issueForm && this.issueForm.invalid) {

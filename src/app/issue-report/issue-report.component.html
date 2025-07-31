@@ -2,8 +2,8 @@
 @if (issueForm) {
   <form clrForm [formGroup]="issueForm" (ngSubmit)="addIssue()">
     <clr-input-container>
-      <label>Issue</label>
-      <input clrInput formControlName="title" />
+      <label for="title">Issue</label>
+      <input id="title" clrInput formControlName="title" />
       <clr-control-error>Title is required</clr-control-error>
     </clr-input-container>
 
@@ -30,50 +30,54 @@
     }
 
     <clr-textarea-container>
-      <label>Description</label>
+      <label for="description">Description</label>
       <textarea
+        id="description"
         clrTextarea
         formControlName="description"
         placeholder="Description"
       ></textarea>
     </clr-textarea-container>
     <clr-radio-container clrInline>
-      <label>Priority</label>
+      <label for="priority">Priority</label>
       <clr-radio-wrapper>
         <input
+          id="priority-low"
           clrRadio
           type="radio"
           name="priority"
           value="low"
           formControlName="priority"
           />
-        <label>Low</label>
+        <label for="priority-low">Low</label>
       </clr-radio-wrapper>
       <clr-radio-wrapper>
         <input
+          id="priority-medium"
           clrRadio
           type="radio"
           name="priority"
           value="medium"
           formControlName="priority"
           />
-        <label>Medium</label>
+        <label for="priority-medium">Medium</label>
       </clr-radio-wrapper>
       <clr-radio-wrapper>
         <input
+          id="priority-high"
           clrRadio
           type="radio"
           name="priority"
           value="high"
           formControlName="priority"
           />
-        <label>High</label>
+        <label for="priority-high">High</label>
       </clr-radio-wrapper>
       <clr-control-error>Priority is required</clr-control-error>
     </clr-radio-container>
     <clr-select-container>
-      <label>Type</label>
-      <select clrSelect formControlName="type">
+      <label for="type">Type</label>
+      <select id="type" clrSelect formControlName="type">
         <option value="feature">Feature</option>
         <option value="bug">Bug</option>
         <option value="task">Task</option>

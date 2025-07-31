@@ -17,8 +17,7 @@ describe('IssueReportComponent', () => {
     };
 
     await TestBed.configureTestingModule({
-      declarations: [IssueReportComponent],
-      imports: [ReactiveFormsModule],
+      imports: [IssueReportComponent, ReactiveFormsModule],
       providers: [{ provide: IssuesService, useValue: mockIssuesService }],
       schemas: [CUSTOM_ELEMENTS_SCHEMA],
     }).compileComponents();

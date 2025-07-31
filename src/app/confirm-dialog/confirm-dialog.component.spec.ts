@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { ConfirmDialogComponent } from './confirm-dialog.component';
-import { CUSTOM_ELEMENTS_SCHEMA, input, signal } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, signal } from '@angular/core';
 import { By } from '@angular/platform-browser';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { InteractivityChecker } from '@angular/cdk/a11y';
@@ -22,8 +22,7 @@ describe('ConfirmDialogComponent', () => {
     window.Element.prototype.animate = jest.fn();
 
     await TestBed.configureTestingModule({
-      imports: [NoopAnimationsModule, FormsModule],
-      declarations: [ConfirmDialogComponent],
+      imports: [NoopAnimationsModule, FormsModule, ConfirmDialogComponent],
       schemas: [CUSTOM_ELEMENTS_SCHEMA],
     })
       .overrideProvider(InteractivityChecker, {
@@ -37,7 +36,8 @@ describe('ConfirmDialogComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(ConfirmDialogComponent);
     component = fixture.componentInstance;
-    component.issueNumber = signal(123);
+    // For testing, we can access the component's input signal directly
+    // but we don't need to modify it since it's read-only
     fixture.detectChanges();
   });
 
@@ -49,14 +49,14 @@ describe('ConfirmDialogComponent', () => {
     jest.spyOn(component.confirm, 'emit');
     component.agree();
     expect(component.confirm.emit).toHaveBeenCalledWith(true);
-    expect(component.issueNumber()).toBe(0);
+    // No longer checking for issueNumber reset as that functionality was removed
   });
 
   it('should emit false when disagree is called', () => {
     jest.spyOn(component.confirm, 'emit');
     component.disagree();
     expect(component.confirm.emit).toHaveBeenCalledWith(false);
-    expect(component.issueNumber()).toBe(0);
+    // No longer checking for issueNumber reset as that functionality was removed
   });
 
   it('should open modal when issueNumber is defined', () => {
@@ -66,6 +66,7 @@ describe('ConfirmDialogComponent', () => {
 
   it('should close modal when click Cancel', () => {
     jest.spyOn(component, 'disagree');
+    fixture.componentRef.setInput('issueNumber', 123);
     fixture.detectChanges();
     const cancelButton = fixture.debugElement.query(By.css('.btn-outline'));
     cancelButton.triggerEventHandler('click', null);
@@ -74,6 +75,7 @@ describe('ConfirmDialogComponent', () => {
 
   it('should emit event when click Yes, continue', () => {
     jest.spyOn(component, 'agree');
+    fixture.componentRef.setInput('issueNumber', 123);
     fixture.detectChanges();
     const agreeButton = fixture.debugElement.query(By.css('.btn-danger'));
     agreeButton.triggerEventHandler('click', null);

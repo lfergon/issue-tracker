@@ -12,7 +12,7 @@
     <clr-dg-column [clrDgField]="'priority'">Priority</clr-dg-column>
     <clr-dg-row *clrDgItems="let issue of issues">
       <clr-dg-action-overflow>
-        <button class="action-item" (click)="selectedIssue = issue">
+        <button class="action-item" (click)="setSelectedIssue(issue)">
           Resolve
         </button>
       </clr-dg-action-overflow>

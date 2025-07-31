@@ -13,3 +13,10 @@ Object.defineProperty(document.body.style, 'transform', {
     };
   },
 });
+
+// Mock IntersectionObserver
+(window as any).IntersectionObserver = jest.fn().mockImplementation(() => ({
+  disconnect: jest.fn(),
+  observe: jest.fn(),
+  unobserve: jest.fn(),
+}));
