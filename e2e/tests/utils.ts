@@ -1,24 +1,32 @@
 import * as puppeteer from 'puppeteer';
+import * as fs from 'fs';
+import * as path from 'path';
 
 const baseUrl = process.env['baseUrl'] ?? 'http://localhost:4200/';
 let browser: puppeteer.Browser;
 let page: puppeteer.Page;
 
-export function setupBrowserHooks(path = ''): void {
+export function setupBrowserHooks(pathUrl = ''): void {
   beforeAll(async () => {
+    if (!fs.existsSync(testResultsFolder)) {
+      fs.mkdirSync(testResultsFolder, { recursive: true });
+    }
+
     const isCI = process.env['CI'] === 'true';
     browser = await puppeteer.launch({
-      headless: isCI ? true : false,
-      args: isCI ? [
-        '--no-sandbox',
-        '--disable-setuid-sandbox',
-        '--disable-dev-shm-usage',
-        '--disable-accelerated-2d-canvas',
-        '--no-first-run',
-        '--no-zygote',
-        '--single-process',
-        '--disable-gpu'
-      ] : []
+      headless: isCI,
+      args: isCI
+        ? [
+            '--no-sandbox',
+            '--disable-setuid-sandbox',
+            '--disable-dev-shm-usage',
+            '--disable-accelerated-2d-canvas',
+            '--no-first-run',
+            '--no-zygote',
+            '--single-process',
+            '--disable-gpu',
+          ]
+        : [],
     });
   });
 
