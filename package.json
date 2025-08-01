@@ -42,7 +42,7 @@
     "@puppeteer/browsers": "~2.7.1",
     "@puppeteer/ng-schematics": "~0.7.0",
     "@testing-library/angular": "~17.4.0",
-    "@testing-library/dom": "~10.0.0",
+    "@testing-library/dom": "~10.4.1",
     "@types/jest": "~29.5.12",
     "@types/node": "~22.9.3",
     "@typescript-eslint/eslint-plugin": "~7.0.0",
