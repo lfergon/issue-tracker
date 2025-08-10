@@ -52,7 +52,7 @@
     "jest-environment-jsdom": "~30.0.5",
     "jest-preset-angular": "~15.0.0",
     "prettier": "~3.3.2",
-    "puppeteer": "~24.2.1",
+    "puppeteer": "~24.16.0",
     "resize-observer-polyfill": "~1.5.1",
     "typescript": "~5.8.3"
   },
